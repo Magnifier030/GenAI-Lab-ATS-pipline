@@ -220,8 +220,13 @@ def create_document(datas, output_file_path):
     #key = test_station
     #value = test_items
     # items() = (key, value)
-    i = -1
+    i = 0
     word_table = doc.add_table(rows=len(content), cols=6)
+    word_table.cell(i, 0).paragraphs[0].add_run('test_station')
+    word_table.cell(i, 1).paragraphs[0].add_run('command')
+    word_table.cell(i, 2).paragraphs[0].add_run('criteria')
+    word_table.cell(i, 3).paragraphs[0].add_run('generative_command')
+    word_table.cell(i, 4).paragraphs[0].add_run('generative_criteria')
     set_table_borders(word_table)
     for test_item_content in tqdm(content, desc="Processing items"):
         i += 1
