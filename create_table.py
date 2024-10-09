@@ -7,6 +7,7 @@ from docx.oxml import OxmlElement
 from collections import defaultdict
 from tqdm import tqdm
 
+
 def hex_to_rgb(hex_color):
     """將十六進制顏色代碼轉換為 RGB 顏色"""
     hex_color = hex_color.lstrip('#').replace(';', '')
@@ -223,6 +224,7 @@ def create_document(datas, output_file_path):
     i = 0
     word_table = doc.add_table(rows=len(content) + 1, cols=6)
     word_table.cell(i, 0).paragraphs[0].add_run('test_station')
+    word_table.cell(i, 0).paragraphs[0].add_run('test_item')
     word_table.cell(i, 1).paragraphs[0].add_run('command')
     word_table.cell(i, 2).paragraphs[0].add_run('criteria')
     word_table.cell(i, 3).paragraphs[0].add_run('generative_command')
