@@ -97,9 +97,9 @@ def get_generative_data(instruction, data):
     color_tag_commands = abstract_keyword(instruction, 2)
 
     color_tag_criterias = [
-        tag
+        tag.strip()
         for tag in color_tag_criterias
-        if len(tag) >= 0 or re.search(r"\W",input_psd) is None
+        if len(tag) >= 0 or re.search(r"\W",input_psd) is None or ()
     ]
 
     color_tag_criterias = [
