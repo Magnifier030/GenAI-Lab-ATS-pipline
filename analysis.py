@@ -1,4 +1,4 @@
-import itertools
+import itertools, re
 from bs4 import BeautifulSoup
 
 def levenshtein_distance(s1, s2):
@@ -95,8 +95,15 @@ def delete_command_from_criteria(color_criterias, commands):
 def get_generative_data(instruction, data):
     color_tag_criterias = abstract_keyword(instruction, 3)
     color_tag_commands = abstract_keyword(instruction, 2)
+
     color_tag_criterias = [
-        tag[1:] if  len(tag) > 0 and tag[0] == " " else 
+        tag
+        for tag in color_tag_criterias
+        if len(tag) >= 0 or re.search(r"\W",input_psd) is None
+    ]
+
+    color_tag_criterias = [
+        tag[1:] if tag[0] == " " else 
         tag[:-2] if tag[-1] == " " else
         tag 
         for tag in color_tag_criterias
