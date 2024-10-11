@@ -1,0 +1,630 @@
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+  <w:body>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="6251" w:type="pct"/>
+        <w:jc w:val="center"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+          <w:left w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+          <w:right w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+          <w:insideH w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+          <w:insideV w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+        </w:tblBorders>
+        <w:tblLook w:val="0020" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="0" w:noVBand="0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2955"/>
+        <w:gridCol w:w="2425"/>
+        <w:gridCol w:w="4967"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00C429E7" w:rsidRPr="00D15A64" w14:paraId="7B0C4633" w14:textId="77777777" w:rsidTr="00CB31B7">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5000" w:type="pct"/>
+            <w:gridSpan w:val="3"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="2B6C768A" w14:textId="11220E99" w:rsidR="00C429E7" w:rsidRPr="00D15A64" w:rsidRDefault="00C429E7" w:rsidP="00154481">
+            <w:pPr>
+              <w:pStyle w:val="1"/>
+              <w:tabs>
+                <w:tab w:val="center" w:pos="2361"/>
+              </w:tabs>
+              <w:spacing w:before="0" w:after="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="12"/>
+                <w:lang w:eastAsia="zh-TW"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00250053">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="標楷體" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:bCs/>
+                <w:color w:val="FF0000"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Test Items </w:t>
+            </w:r>
+            <w:r w:rsidR="00410158">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="標楷體" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:bCs/>
+                <w:color w:val="FF0000"/>
+                <w:szCs w:val="24"/>
+                <w:lang w:eastAsia="zh-TW"/>
+              </w:rPr>
+              <w:t>PCBA</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00250053">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="標楷體" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:bCs/>
+                <w:color w:val="FF0000"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> station</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00C41D01" w:rsidRPr="00D15A64" w14:paraId="0842DD50" w14:textId="77777777" w:rsidTr="00CB31B7">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1428" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="20EE09F7" w14:textId="77777777" w:rsidR="00C429E7" w:rsidRPr="002704C4" w:rsidRDefault="00C429E7" w:rsidP="00933D33">
+            <w:pPr>
+              <w:pStyle w:val="1"/>
+              <w:tabs>
+                <w:tab w:val="center" w:pos="2361"/>
+              </w:tabs>
+              <w:spacing w:before="0" w:after="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="16"/>
+                <w:lang w:eastAsia="zh-TW"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002704C4">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="16"/>
+                <w:lang w:eastAsia="zh-TW"/>
+              </w:rPr>
+              <w:t>T</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002704C4">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>est Item Name</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1172" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="background1"/>
+          </w:tcPr>
+          <w:p w14:paraId="670110E2" w14:textId="77777777" w:rsidR="00C429E7" w:rsidRPr="00D15A64" w:rsidRDefault="00C429E7" w:rsidP="00933D33">
+            <w:pPr>
+              <w:pStyle w:val="1"/>
+              <w:tabs>
+                <w:tab w:val="center" w:pos="2361"/>
+              </w:tabs>
+              <w:spacing w:before="0" w:after="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00D15A64">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>Command</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF" w:themeFill="background1"/>
+          </w:tcPr>
+          <w:p w14:paraId="2EF1AB3C" w14:textId="77777777" w:rsidR="00C429E7" w:rsidRPr="00D15A64" w:rsidRDefault="00C429E7" w:rsidP="00933D33">
+            <w:pPr>
+              <w:pStyle w:val="1"/>
+              <w:tabs>
+                <w:tab w:val="center" w:pos="2361"/>
+              </w:tabs>
+              <w:spacing w:before="0" w:after="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="12"/>
+                <w:lang w:eastAsia="zh-TW"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00D15A64">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="12"/>
+                <w:lang w:eastAsia="zh-TW"/>
+              </w:rPr>
+              <w:t>Criteria</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00C67919" w:rsidRPr="00D15A64" w14:paraId="465AA730" w14:textId="77777777" w:rsidTr="00CB31B7">
+        <w:trPr>
+          <w:trHeight w:val="402"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1428" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="6BEE2733" w14:textId="1F1009BA" w:rsidR="00C67919" w:rsidRPr="002704C4" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:bookmarkStart w:id="0" w:name="_Hlk179534154"/>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>MemSizeCheck</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1172" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="0669F0F5" w14:textId="7194C21D" w:rsidR="00C67919" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C95C43">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>007_mem_size -t 510416</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="3F5C1323" w14:textId="77777777" w:rsidR="00C67919" w:rsidRPr="00C67919" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>Result: PASS</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="2F9A1D16" w14:textId="4A56F344" w:rsidR="00C67919" w:rsidRPr="00C67919" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:br/>
+              <w:t>//</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:noProof/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Memory will be changed when using Meraki’s </w:t>
+            </w:r>
+            <w:proofErr w:type="gramStart"/>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:noProof/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+              </w:rPr>
+              <w:t>firmware</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>./</w:t>
+            </w:r>
+            <w:proofErr w:type="gramEnd"/>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00C67919" w:rsidRPr="00D15A64" w14:paraId="2BA00372" w14:textId="77777777" w:rsidTr="00CB31B7">
+        <w:trPr>
+          <w:trHeight w:val="402"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1428" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="5C202E11" w14:textId="651810F8" w:rsidR="00C67919" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:bookmarkStart w:id="1" w:name="_Hlk179534203"/>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>MemSizeCheck</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1172" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="59942E39" w14:textId="674FDC06" w:rsidR="00C67919" w:rsidRPr="00C95C43" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C95C43">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>007_mem_size -t 510416</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="7DB8C6FD" w14:textId="77777777" w:rsidR="00C67919" w:rsidRPr="00C67919" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>Result: PASS</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="24BE17B3" w14:textId="34B6DEEF" w:rsidR="00C67919" w:rsidRPr="00C67919" w:rsidRDefault="00C67919" w:rsidP="00C67919">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:br/>
+              <w:t>//</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:noProof/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Memory will be changed when using Meraki’s </w:t>
+            </w:r>
+            <w:proofErr w:type="gramStart"/>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:noProof/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+              </w:rPr>
+              <w:t>firmware</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>./</w:t>
+            </w:r>
+            <w:proofErr w:type="gramEnd"/>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkEnd w:id="1"/>
+      <w:tr w:rsidR="003012ED" w:rsidRPr="00D15A64" w14:paraId="312E1009" w14:textId="77777777" w:rsidTr="00CB31B7">
+        <w:trPr>
+          <w:trHeight w:val="402"/>
+          <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1428" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="69C70343" w14:textId="07BE11FB" w:rsidR="003012ED" w:rsidRDefault="003012ED" w:rsidP="003012ED">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+            </w:pPr>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="16"/>
+              </w:rPr>
+              <w:t>MemSizeCheck</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1172" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="12D50FB6" w14:textId="21C48D65" w:rsidR="003012ED" w:rsidRPr="00C95C43" w:rsidRDefault="003012ED" w:rsidP="003012ED">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C95C43">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="0070C0"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>007_mem_size -t 510416</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="0C7132E9" w14:textId="77777777" w:rsidR="003012ED" w:rsidRPr="003012ED" w:rsidRDefault="003012ED" w:rsidP="003012ED">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="003012ED">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>Result: PASS</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="12C881F3" w14:textId="6DBAD89A" w:rsidR="003012ED" w:rsidRPr="00C67919" w:rsidRDefault="003012ED" w:rsidP="003012ED">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="exact"/>
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:br/>
+              <w:t>//</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:noProof/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> Memory will be changed when using Meraki’s </w:t>
+            </w:r>
+            <w:proofErr w:type="gramStart"/>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:noProof/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+              </w:rPr>
+              <w:t>firmware</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>./</w:t>
+            </w:r>
+            <w:proofErr w:type="gramEnd"/>
+            <w:r w:rsidRPr="00C67919">
+              <w:rPr>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
+                <w:color w:val="000000" w:themeColor="text1"/>
+                <w:sz w:val="16"/>
+                <w:szCs w:val="12"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:bookmarkEnd w:id="0"/>
+    </w:tbl>
+    <w:p w14:paraId="7646EE5F" w14:textId="77777777" w:rsidR="00B834F9" w:rsidRDefault="00B834F9"/>
+    <w:sectPr w:rsidR="00B834F9">
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="851" w:footer="992" w:gutter="0"/>
+      <w:cols w:space="425"/>
+      <w:docGrid w:type="lines" w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

@@ -1,0 +1,41 @@
+[
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>007_mem_size -t 510416</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>// Memory will be changed when using Meraki\u2019s firmware.//</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n\n<|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [],
+            "criterias": []
+        },
+        "test_station": "Test Items PCBA station",
+        "test_item": "MemSizeCheck",
+        "level": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>007_mem_size -t 510416</color></highlight></column><column><highlight value = None><color value = '#000000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>// Memory will be changed when using Meraki\u2019s firmware.//</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n\n<|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [],
+            "criterias": []
+        },
+        "test_station": "Test Items PCBA station",
+        "test_item": "MemSizeCheck",
+        "level": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>007_mem_size -t 510416</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>// Memory will be changed when using Meraki\u2019s firmware.//</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n\n<|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [],
+            "criterias": []
+        },
+        "test_station": "Test Items PCBA station",
+        "test_item": "MemSizeCheck",
+        "level": ""
+    }
+]
