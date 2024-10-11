@@ -99,7 +99,7 @@ def get_generative_data(instruction, data):
     color_tag_criterias = [
         tag.strip()
         for tag in color_tag_criterias
-        if (tag[0] == " " and len(tag)>1) or len(tag) > 0
+        if len(tag) > 0
     ]
 
     color_tag_criterias = [
