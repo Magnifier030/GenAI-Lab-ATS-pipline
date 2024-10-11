@@ -102,12 +102,12 @@ def get_generative_data(instruction, data):
         if len(tag) > 0
     ]
 
-    color_tag_criterias = [
-        tag[1:] if len(tag) > 2 and tag[0] == " "  else 
-        tag[:-2] if len(tag) > 2 and tag[-1] == " " else
-        tag 
-        for tag in color_tag_criterias
-    ]
+    # color_tag_criterias = [
+    #     tag[1:] if len(tag) > 2 and tag[0] == " "  else 
+    #     tag[:-2] if len(tag) > 2 and tag[-1] == " " else
+    #     tag 
+    #     for tag in color_tag_criterias
+    # ]
     data = data[data.find('Answer') + 6 :] if "Answer" in data else data
     data = data[:data.find('User:')] if 'User:' in data else data
 
