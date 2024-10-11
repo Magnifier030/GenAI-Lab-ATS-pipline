@@ -71,12 +71,12 @@ def main():
     llm_dataset_path = f"{file_path}/llm_datasets.json"
     generative_datas_path = output_path
 
-    generate(
-        model_path=model_path,
-        prompt_path=prompt_path,
-        output_path=output_path,
-        dataset_path=llm_dataset_path
-    )
+    # generate(
+    #     model_path=model_path,
+    #     prompt_path=prompt_path,
+    #     output_path=output_path,
+    #     dataset_path=llm_dataset_path
+    # )
 
     datas = get_conbined_datas(
         llm_dataset_path=llm_dataset_path,
