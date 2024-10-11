@@ -1,7 +1,5 @@
 {
     "Prompt 1": [
-        "Answer: \n<command>007_mem_size -t 510416</command>\n<criteria>Result: PASS</criteria>\n<criteria>// Memory will be changed when using Meraki’s firmware.//</criteria>",
-        "Answer: \n<command>007_mem_size -t 510416</command>\n<criteria>Result: PASS</criteria>\n<criteria>// Memory will be changed when using Meraki’s firmware.//</criteria>",
-        "Answer: \n<command>007_mem_size -t 510416</command>\n<criteria>Result: PASS</criteria>"
+        "Answer: \n<command>007_mem_size -t 510416</command>\n<criteria>Memory will be changed when using Meraki’s firmware.</criteria>"
     ]
 }
