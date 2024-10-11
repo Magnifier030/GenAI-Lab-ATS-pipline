@@ -1,4 +1,4 @@
-<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16du wp14">
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
   <w:body>
     <w:tbl>
       <w:tblPr>
@@ -19,64 +19,6 @@
         <w:gridCol w:w="2425"/>
         <w:gridCol w:w="4967"/>
       </w:tblGrid>
-      <w:tr w:rsidR="00C429E7" w:rsidRPr="00D15A64" w14:paraId="7B0C4633" w14:textId="77777777" w:rsidTr="00CB31B7">
-        <w:trPr>
-          <w:trHeight w:val="20"/>
-          <w:jc w:val="center"/>
-        </w:trPr>
-        <w:tc>
-          <w:tcPr>
-            <w:tcW w:w="5000" w:type="pct"/>
-            <w:gridSpan w:val="3"/>
-            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
-            <w:vAlign w:val="center"/>
-          </w:tcPr>
-          <w:p w14:paraId="2B6C768A" w14:textId="11220E99" w:rsidR="00C429E7" w:rsidRPr="00D15A64" w:rsidRDefault="00C429E7" w:rsidP="00154481">
-            <w:pPr>
-              <w:pStyle w:val="1"/>
-              <w:tabs>
-                <w:tab w:val="center" w:pos="2361"/>
-              </w:tabs>
-              <w:spacing w:before="0" w:after="0"/>
-              <w:jc w:val="both"/>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
-                <w:sz w:val="18"/>
-                <w:szCs w:val="12"/>
-                <w:lang w:eastAsia="zh-TW"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00250053">
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="標楷體" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
-                <w:bCs/>
-                <w:color w:val="FF0000"/>
-                <w:szCs w:val="24"/>
-              </w:rPr>
-              <w:t xml:space="preserve">Test Items </w:t>
-            </w:r>
-            <w:r w:rsidR="00410158">
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="標楷體" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:bCs/>
-                <w:color w:val="FF0000"/>
-                <w:szCs w:val="24"/>
-                <w:lang w:eastAsia="zh-TW"/>
-              </w:rPr>
-              <w:t>PCBA</w:t>
-            </w:r>
-            <w:r w:rsidRPr="00250053">
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="標楷體" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
-                <w:bCs/>
-                <w:color w:val="FF0000"/>
-                <w:szCs w:val="24"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> station</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
       <w:tr w:rsidR="00C41D01" w:rsidRPr="00D15A64" w14:paraId="0842DD50" w14:textId="77777777" w:rsidTr="00CB31B7">
         <w:trPr>
           <w:trHeight w:val="20"/>
@@ -200,7 +142,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -373,7 +315,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -467,7 +409,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -519,7 +461,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorHAnsi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorHAnsi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -612,7 +554,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -684,7 +626,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
@@ -779,7 +721,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -835,7 +777,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -877,23 +819,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>Check</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>Board</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>ID</w:t>
+              <w:t>CheckBoardID</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -933,7 +859,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
@@ -965,7 +891,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -1247,7 +1173,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -1398,7 +1324,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -1505,15 +1431,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>CheckSFPInfo</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>2</w:t>
+              <w:t>CheckSFPInfo2</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1626,7 +1544,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -1740,15 +1658,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>CheckSFPSpeed</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>2</w:t>
+              <w:t>CheckSFPSpeed2</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1762,7 +1672,6 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
                 <w:color w:val="0070C0"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
@@ -1839,7 +1748,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -1850,15 +1759,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>CheckSFP</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>Loading1</w:t>
+              <w:t>CheckSFPLoading1</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1947,15 +1848,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>CheckSFPLoading</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>2</w:t>
+              <w:t>CheckSFPLoading2</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -1969,7 +1862,6 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
                 <w:color w:val="0070C0"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
@@ -2034,7 +1926,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2134,7 +2026,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2214,23 +2106,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>2</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> is enabled</w:t>
+              <w:t>Port 2 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="2D56A0DD" w14:textId="77777777" w:rsidR="00802823" w:rsidRDefault="00802823" w:rsidP="002C166B">
@@ -2248,23 +2124,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve">3 </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>is enabled</w:t>
+              <w:t>Port 3 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="7AB43287" w14:textId="77777777" w:rsidR="00802823" w:rsidRDefault="00802823" w:rsidP="002C166B">
@@ -2282,23 +2142,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>4</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> is enabled</w:t>
+              <w:t>Port 4 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="57638FEA" w14:textId="77777777" w:rsidR="00802823" w:rsidRDefault="00802823" w:rsidP="002C166B">
@@ -2316,23 +2160,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>5</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> is enabled</w:t>
+              <w:t>Port 5 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="1FE8CD0D" w14:textId="77777777" w:rsidR="00802823" w:rsidRDefault="00802823" w:rsidP="002C166B">
@@ -2350,23 +2178,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>6</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> is enabled</w:t>
+              <w:t>Port 6 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="2DD14521" w14:textId="77777777" w:rsidR="00802823" w:rsidRDefault="00802823" w:rsidP="002C166B">
@@ -2384,23 +2196,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>7</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> is enabled</w:t>
+              <w:t>Port 7 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="5508D257" w14:textId="77777777" w:rsidR="00802823" w:rsidRDefault="00802823" w:rsidP="002C166B">
@@ -2418,30 +2214,14 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
-              <w:t xml:space="preserve">Port </w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t>8</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="12"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> is enabled</w:t>
+              <w:t>Port 8 is enabled</w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="03200F51" w14:textId="5D8FF634" w:rsidR="00802823" w:rsidRPr="00A01F8E" w:rsidRDefault="00802823" w:rsidP="002C166B">
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -2472,7 +2252,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2554,7 +2334,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2566,7 +2346,6 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:lastRenderedPageBreak/>
               <w:t>POETest</w:t>
             </w:r>
             <w:proofErr w:type="spellEnd"/>
@@ -2636,7 +2415,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2648,6 +2427,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
+              <w:lastRenderedPageBreak/>
               <w:t>FrontPortLED</w:t>
             </w:r>
             <w:r w:rsidR="009C70F5">
@@ -2695,7 +2475,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -2726,7 +2506,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2777,7 +2557,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -2808,7 +2588,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2859,7 +2639,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -2890,7 +2670,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -2902,15 +2682,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>SysLEDO</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>ff</w:t>
+              <w:t>SysLEDOff</w:t>
             </w:r>
             <w:proofErr w:type="spellEnd"/>
           </w:p>
@@ -2949,7 +2721,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -2980,7 +2752,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3050,7 +2822,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -3081,7 +2853,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3105,7 +2877,6 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
                 <w:color w:val="0070C0"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
@@ -3131,7 +2902,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -3360,7 +3131,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3531,7 +3302,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3607,7 +3378,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorHAnsi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorHAnsi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3656,7 +3427,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3776,7 +3547,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -3951,7 +3722,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -3978,7 +3749,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="0070C0"/>
                 <w:kern w:val="2"/>
                 <w:sz w:val="16"/>
@@ -4092,7 +3863,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -4103,15 +3874,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t>Verify</w:t>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>SN</w:t>
+              <w:t>VerifySN</w:t>
             </w:r>
           </w:p>
         </w:tc>
@@ -4195,7 +3958,7 @@
               <w:pStyle w:val="10"/>
               <w:ind w:left="0"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -4226,7 +3989,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -4253,7 +4016,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="0070C0"/>
                 <w:kern w:val="2"/>
                 <w:sz w:val="16"/>
@@ -4303,7 +4066,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
@@ -4346,7 +4109,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -4373,7 +4136,6 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
                 <w:color w:val="0070C0"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
@@ -4397,27 +4159,7 @@
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
-              <w:t xml:space="preserve"> </w:t>
-            </w:r>
-            <w:proofErr w:type="spellStart"/>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
-                <w:color w:val="0070C0"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t>tam</w:t>
-            </w:r>
-            <w:proofErr w:type="spellEnd"/>
-            <w:r>
-              <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
-                <w:color w:val="0070C0"/>
-                <w:sz w:val="16"/>
-                <w:szCs w:val="16"/>
-              </w:rPr>
-              <w:t xml:space="preserve"> </w:t>
+              <w:t xml:space="preserve"> tam </w:t>
             </w:r>
             <w:r w:rsidR="00965089">
               <w:rPr>
@@ -4471,7 +4213,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -4550,7 +4292,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -4618,7 +4360,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -4680,7 +4422,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -4724,7 +4466,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -4762,7 +4504,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
@@ -4831,7 +4573,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -4866,7 +4608,6 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
                 <w:color w:val="0070C0"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
@@ -4902,7 +4643,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -4946,7 +4687,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
@@ -4997,7 +4738,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
@@ -5046,7 +4787,7 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
               </w:rPr>
@@ -5081,7 +4822,6 @@
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:jc w:val="both"/>
               <w:rPr>
-                <w:rFonts w:hint="eastAsia"/>
                 <w:color w:val="0070C0"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="16"/>
@@ -5127,7 +4867,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
               </w:rPr>
@@ -5145,7 +4885,7 @@
             <w:pPr>
               <w:spacing w:line="240" w:lineRule="exact"/>
               <w:rPr>
-                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi" w:hint="eastAsia"/>
+                <w:rFonts w:asciiTheme="minorHAnsi" w:eastAsia="Arial Unicode MS" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/>
                 <w:color w:val="FF0000"/>
                 <w:sz w:val="16"/>
                 <w:szCs w:val="12"/>
