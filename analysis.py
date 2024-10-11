@@ -99,11 +99,17 @@ def get_generative_data(instruction, data):
     color_tag_criterias = [
         tag.strip()
         for tag in color_tag_criterias
-        if len(tag) >= 0 or re.search(r"\W",input_psd) is None or ()
+        if (tag[0] == " " and len(tag)>1) or len(tag) > 0
     ]
 
     color_tag_criterias = [
-        tag[1:] if tag[0] == " " else 
+        tag.strip()
+        for tag in color_tag_criterias
+        if len(tag) > 0 or re.search(r"\W",input_psd) is None or ()
+    ]
+
+    color_tag_criterias = [
+        tag[1:] if tag[0] == " "  else 
         tag[:-2] if tag[-1] == " " else
         tag 
         for tag in color_tag_criterias
