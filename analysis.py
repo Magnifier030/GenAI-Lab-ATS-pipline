@@ -103,8 +103,8 @@ def get_generative_data(instruction, data):
     ]
 
     color_tag_criterias = [
-        tag[1:] if tag[0] == " "  else 
-        tag[:-2] if tag[-1] == " " else
+        tag[1:] if len(tag) > 2 and tag[0] == " "  else 
+        tag[:-2] if len(tag) > 2 and tag[-1] == " " else
         tag 
         for tag in color_tag_criterias
     ]
