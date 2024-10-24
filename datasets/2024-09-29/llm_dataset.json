@@ -1,0 +1,626 @@
+[
+    {
+        "instruction": "<command>Login: root</command>\n<criteria>root@imx8qxpc0mek:~#</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckLogin(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckLogin\", \"Login: root\", new string[] { \"\"root@imx8qxpc0mek:~#\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Use DAQ to measure the test points.</command>\n<criteria>EVT2</criteria>\n<criteria>Chip ID: BCM47623_A1</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic EHT_0V85(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"EHT_0V85\", \"Use DAQ to measure the test points.\", new string[] { \"\"EVT2\", \"Chip ID: BCM47623_A1\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>get_hw_ver.sh</command>\n<criteria>Unit:V</criteria>\n<criteria>LSL:0.765</criteria>\n<criteria>USL:0.935</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckHWVersion(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckHWVersion\", \"get_hw_ver.sh\", new string[] { \"\"Unit:V\", \"LSL:0.765\", \"USL:0.935\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Press \u201cESC\u201d to stop autoboot</command>\n<criteria>AP615 v1.0.0 (Dec 30 2022 - 10:26:39 +0800)</criteria>\n<criteria>DRAM:  2 GiB</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckInfo(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckInfo\", \"Press \u201cESC\u201d to stop autoboot\", new string[] { \"\"AP615 v1.0.0 (Dec 30 2022 - 10:26:39 +0800)\", \"DRAM:  2 GiB\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>get_ver.sh</command>\n<criteria>v00.00.02.03</criteria>\n<criteria>RSU-5940 Boot Mode: eMMC</criteria>\n<criteria>RT Ready</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Check IMX8 Version(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Check IMX8 Version\", \"get_ver.sh\", new string[] { \"\"v00.00.02.03\", \"RSU-5940 Boot Mode: eMMC\", \"RT Ready\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cv2x_pwr_ctl.sh off</command>\n<criteria>5.16.3</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Check CV2X UART Function(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Check CV2X UART Function\", \"cv2x_pwr_ctl.sh off\", new string[] { \"\"5.16.3\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>/opt/tools/burnin_stopper \"cmds_main\"</command>\n<criteria>wnc_diag login:</criteria>\n<criteria>/tmp#</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Check_SN_MAC(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Check_SN_MAC\", \"/opt/tools/burnin_stopper \"cmds_main\"\", new string[] { \"\"wnc_diag login:\", \"/tmp#\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>MS_CCT_Qilin.exe -d</command>\n<criteria>Device is online</criteria>\n<criteria>PID: MS230-24P-4G</criteria>\n<criteria>MFG_DONE: true</criteria>\n<criteria>TAM Validation: PASSED</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CCT_D(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CCT_D\", \"MS_CCT_Qilin.exe -d\", new string[] { \"\"Device is online\", \"PID: MS230-24P-4G\", \"MFG_DONE: true\", \"TAM Validation: PASSED\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Press \u201cEnter\u201d to check MFG FW version:</command>\n<criteria>root@OpenWrt:/#</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Check MFG FW version(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Check MFG FW version\", \"Press \u201cEnter\u201d to check MFG FW version:\", new string[] { \"\"root@OpenWrt:/#\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>gpio 24 1</command>\n<criteria>GPIO(24): 1 [out]</criteria>\n<criteria>drop_caches</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Check PSE function(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Check PSE function\", \"gpio 24 1\", new string[] { \"\"GPIO(24): 1 [out]\", \"drop_caches\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>mmc info</command>\n<criteria>3 GiB</criteria>\n<criteria>Firmware version: 12.1.3.0</criteria>\n<criteria>Using B0 firmware</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic peripheral information check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"peripheral information check\", \"mmc info\", new string[] { \"\"3 GiB\", \"Firmware version: 12.1.3.0\", \"Using B0 firmware\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>016GB</command>\n<criteria>User Capacity: 7.3 GiB ENH WRREL</criteria>\n<criteria>eth0 PHY4 up Speed :10000 Full duplex</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic peripheral information check 2(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"peripheral information check 2\", \"016GB\", new string[] { \"\"User Capacity: 7.3 GiB ENH WRREL\", \"eth0 PHY4 up Speed :10000 Full duplex\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 1 4 1</command>\n<criteria>0x40 LTC9105 POWER_MONITOR Test</criteria>\n<criteria>52 ~ V ~ 57</criteria>\n<criteria>0 ~ W ~ 25.5</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Currnet/Power Monitor check 1 (0x40)(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Currnet/Power Monitor check 1 (0x40)\", \"tecro 0 1 4 1\", new string[] { \"\"0x40 LTC9105 POWER_MONITOR Test\", \"52 ~ V ~ 57\", \"0 ~ W ~ 25.5\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 5 1 0</command>\n<criteria>Get emmc info</criteria>\n<criteria>HS400</criteria>\n<criteria>016GB2 7.34 GiB</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic EMMC Info Check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"EMMC Info Check\", \"tecro 0 5 1 0\", new string[] { \"\"Get emmc info\", \"HS400\", \"016GB2 7.34 GiB\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>i2cdetect -r -y 0</command>\n<criteria>20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- UU --</criteria>\n<criteria>40: 40 41 -- -- -- -- -- -- -- -- -- -- -- -- -- --</criteria>\n<criteria>70: -- UU -- -- -- -- -- --</criteria>\n<criteria>10: -- -- -- -- -- -- -- -- -- 19 -- -- -- -- -- --</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic I2C Bus Check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"I2C Bus Check\", \"i2cdetect -r -y 0\", new string[] { \"\"20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- UU --\", \"40: 40 41 -- -- -- -- -- -- -- -- -- -- -- -- -- --\", \"70: -- UU -- -- -- -- -- --\", \"10: -- -- -- -- -- -- -- -- -- 19 -- -- -- -- -- --\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 1 2 2</command>\n<criteria>Upgrade chip firmware</criteria>\n<criteria>no update required</criteria>\n<criteria>27.13.17770.0</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic TPM test(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"TPM test\", \"tecro 0 1 2 2\", new string[] { \"\"Upgrade chip firmware\", \"no update required\", \"27.13.17770.0\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 4</command>\n<criteria>Bus 001 Device 001</criteria>\n<criteria>Bus 001 Device 002</criteria>\n<criteria>Bus 002 Device 001</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic USB Bus Check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"USB Bus Check\", \"tecro 0 4\", new string[] { \"\"Bus 001 Device 001\", \"Bus 001 Device 002\", \"Bus 002 Device 001\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 1 6 3</command>\n<criteria>0x46 BMP580 BAROMETER Test</criteria>\n<criteria>/tmp/gl-nmea.log:   130935</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic BMP580 Sensor Check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"BMP580 Sensor Check\", \"tecro 0 1 6 3\", new string[] { \"\"0x46 BMP580 BAROMETER Test\", \"/tmp/gl-nmea.log:   130935\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>dd if=/dev/nvme0n1p3 bs=1 count=6 2>/dev/null</command>\n<criteria>070701</criteria>\n<criteria>ActiveTPMInstanceVersion: 1.258 (0x00010102)</criteria>\n<criteria>InactiveTPMInstanceVersion: 1.258 (0x00010102)</criteria>\n<criteria>Aboot#</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ValidateCPIO(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ValidateCPIO\", \"dd if=/dev/nvme0n1p3 bs=1 count=6 2>/dev/null\", new string[] { \"\"070701\", \"ActiveTPMInstanceVersion: 1.258 (0x00010102)\", \"InactiveTPMInstanceVersion: 1.258 (0x00010102)\", \"Aboot#\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi</command>\n<criteria>Upgrade counter: 0</criteria>\n<criteria>Starting Firmware Upgrade</criteria>\n<criteria>Post-upgrade counter: 0</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic UpdateActiveTPM(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"UpdateActiveTPM\", \"tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi\", new string[] { \"\"Upgrade counter: 0\", \"Starting Firmware Upgrade\", \"Post-upgrade counter: 0\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command><DUT power cycle></command>\n<criteria>wnc_diag login: </criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic PowerCycleToBoot(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"PowerCycleToBoot\", \"<DUT power cycle>\", new string[] { \"\"wnc_diag login: \"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tpm2util stm \u2013status</command>\n<criteria>Starting Firmware Upgrade</criteria>\n<criteria>Upgrade counter: 0</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckActiveTPM(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckActiveTPM\", \"tpm2util stm \u2013status\", new string[] { \"\"Starting Firmware Upgrade\", \"Upgrade counter: 0\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cat /usr/local/prefdl_data</command>\n<criteria>Test Command: cat /usr/local/prefdl_data</criteria>\n<criteria>Test Description: Read all information and check</criteria>\n<criteria>DataFormat: 0003</criteria>\n<criteria>SKU: ZTX-7250S-16S</criteria>\n<criteria>SerialNumber: WTW21481002</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckPrefdl(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckPrefdl\", \"cat /usr/local/prefdl_data\", new string[] { \"\"Test Command: cat /usr/local/prefdl_data\", \"Test Description: Read all information and check\", \"DataFormat: 0003\", \"SKU: ZTX-7250S-16S\", \"SerialNumber: WTW21481002\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>auto_burnin \u2013e</command>\n<criteria>Pre BurnIn: PASS</criteria>\n<criteria>BurnIn: PASS</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckBurnInResult(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckBurnInResult\", \"auto_burnin \u2013e\", new string[] { \"\"Pre BurnIn: PASS\", \"BurnIn: PASS\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>ztptoken -g</command>\n<criteria>SKU: ZTX-7250S-16S</criteria>\n<criteria>SerialNumber: WTW21481002</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic DisplayPrefdlData(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"DisplayPrefdlData\", \"ztptoken -g\", new string[] { \"\"SKU: ZTX-7250S-16S\", \"SerialNumber: WTW21481002\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cat /mnt/flash/boot-config</command>\n<criteria>SWI=flash:EOS.swi</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic VerifyBootConfig(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"VerifyBootConfig\", \"cat /mnt/flash/boot-config\", new string[] { \"\"SWI=flash:EOS.swi\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cat /mnt/flash/zerotouch-config</command>\n<criteria>DISABLE=True</criteria>\n<criteria>SID: IndependenceRuby2</criteria>\n<criteria>ASY: ASY083160101</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic VerifyZerotouchConfig(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"VerifyZerotouchConfig\", \"cat /mnt/flash/zerotouch-config\", new string[] { \"\"DISABLE=True\", \"SID: IndependenceRuby2\", \"ASY: ASY083160101\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show hardware eeprom</command>\n<criteria>DataFormat: 0003</criteria>\n<criteria>SerialNumber: WTW23070247</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ShowHardwareEeprom(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowHardwareEeprom\", \"show hardware eeprom\", new string[] { \"\"DataFormat: 0003\", \"SerialNumber: WTW23070247\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show version</command>\n<criteria>Arista ZTX-7000-F</criteria>\n<criteria>Hardware version: 11.03</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ShowVersion(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowVersion\", \"show version\", new string[] { \"\"Arista ZTX-7000-F\", \"Hardware version: 11.03\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show inventory</command>\n<criteria>Serial number: WTW23070247</criteria>\n<criteria>Hardware MAC address: ec8a.4804.ed9e</criteria>\n<criteria>Uptime: 2 minutes</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ShowInventory(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowInventory\", \"show inventory\", new string[] { \"\"Serial number: WTW23070247\", \"Hardware MAC address: ec8a.4804.ed9e\", \"Uptime: 2 minutes\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show management security</command>\n<criteria>STM ST33TPHF2X TPM 2.0 (1.512)</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ShowManagementSecurity(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowManagementSecurity\", \"show management security\", new string[] { \"\"STM ST33TPHF2X TPM 2.0 (1.512)\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show platform sfe network-accelerator status</command>\n<criteria>NAC E-Track ID: 0x8000df87</criteria>\n<criteria>Hardware is Ethernet, address is ec8a.4804.fcae</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ShowNacInformation(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowNacInformation\", \"show platform sfe network-accelerator status\", new string[] { \"\"NAC E-Track ID: 0x8000df87\", \"Hardware is Ethernet, address is ec8a.4804.fcae\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>dir /recursive flash:</command>\n<criteria>EOS.swi</criteria>\n<criteria>boot-config</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic DisplayFlashFile(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"DisplayFlashFile\", \"dir /recursive flash:\", new string[] { \"\"EOS.swi\", \"boot-config\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>securebootctl mfg -display</command>\n<criteria>TPM is properly configured</criteria>\n<criteria>Verification successful</criteria>\n<criteria>Secure Boot: disabled</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic verify_secureboot_disable(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"verify_secureboot_disable\", \"securebootctl mfg -display\", new string[] { \"\"TPM is properly configured\", \"Verification successful\", \"Secure Boot: disabled\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tpm2util sb -status</command>\n<criteria>disabled: 1</criteria>\n<criteria>unlockspiflash: 1</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic check_secureboot_status(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"check_secureboot_status\", \"tpm2util sb -status\", new string[] { \"\"disabled: 1\", \"unlockspiflash: 1\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>flashrom -l /etc/spi_layout -i extra_cert -N -w /tmp/a --try-single-erase</command>\n<criteria>Erase/write failed</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckSPI_Unwritable(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckSPI_Unwritable\", \"flashrom -l /etc/spi_layout -i extra_cert -N -w /tmp/a --try-single-erase\", new string[] { \"\"Erase/write failed\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>flashrom -l /etc/spi_layout -i extra_cert -r /tmp/extra_cert.save.2</command>\n<criteria>Unsetting lock bit(s) failed.</criteria>\n<criteria>Reading flash... done.</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckSPI_ExtraCert(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckSPI_ExtraCert\", \"flashrom -l /etc/spi_layout -i extra_cert -r /tmp/extra_cert.save.2\", new string[] { \"\"Unsetting lock bit(s) failed.\", \"Reading flash... done.\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>ble_scan 10</command>\n<criteria>Unit: db</criteria>\n<criteria>LSL: -38</criteria>\n<criteria>USL: -26</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic BleRSSI(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"BleRSSI\", \"ble_scan 10\", new string[] { \"\"Unit: db\", \"LSL: -38\", \"USL: -26\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>net_man at_cmd at+cfun=1</command>\n<criteria>Unit: DB</criteria>\n<criteria>LSL: 40</criteria>\n<criteria>USL: 50</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic GPSCNR(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"GPSCNR\", \"net_man at_cmd at+cfun=1\", new string[] { \"\"Unit: DB\", \"LSL: 40\", \"USL: 50\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>idprom show</command>\n<criteria>sn=A000E8C7CFA88432</criteria>\n<criteria>mn=ARX200S-GTX</criteria>\n<criteria>smn=646</criteria>\n<criteria>pn=844-000000-00</criteria>\n<criteria>hv=A</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckIdprom(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckIdprom\", \"idprom show\", new string[] { \"\"sn=A000E8C7CFA88432\", \"mn=ARX200S-GTX\", \"smn=646\", \"pn=844-000000-00\", \"hv=A\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>diag sys version get</command>\n<criteria>idprom\t version: programmed</criteria>\n<criteria>mgd\t version: enabled</criteria>\n<criteria>mmc\t version: pSLC</criteria>\n<criteria>hw_type\t version: AT-ARX200S-GTX</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckHWSWInfo(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckHWSWInfo\", \"diag sys version get\", new string[] { \"\"idprom\t version: programmed\", \"mgd\t version: enabled\", \"mmc\t version: pSLC\", \"hw_type\t version: AT-ARX200S-GTX\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>halt</command>\n<criteria>reboot: System halted</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic HaltSystem(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"HaltSystem\", \"halt\", new string[] { \"\"reboot: System halted\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>1</command>\n<criteria>flash:ARX200S-5.5.4A-0.1.rel</criteria>\n<criteria>Reading filesystem...</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Switch_Cus_FW(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Switch_Cus_FW\", \"1\", new string[] { \"\"flash:ARX200S-5.5.4A-0.1.rel\", \"Reading filesystem...\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show boot</command>\n<criteria>flash:/default.cfg (file exists)</criteria>\n<criteria>awplus#</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Traffic_Set(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Traffic_Set\", \"show boot\", new string[] { \"\"flash:/default.cfg (file exists)\", \"awplus#\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>test interface all seconds 10 fixed</command>\n<criteria>Test on port1.0.1 complete</criteria>\n<criteria>Test on port1.0.2 complete</criteria>\n<criteria>Test on port1.0.3 complete</criteria>\n<criteria>Test on port1.0.4 complete</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Traffic_Test(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Traffic_Test\", \"test interface all seconds 10 fixed\", new string[] { \"\"Test on port1.0.1 complete\", \"Test on port1.0.2 complete\", \"Test on port1.0.3 complete\", \"Test on port1.0.4 complete\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>erase startup-config</command>\n<criteria>Deleting...</criteria>\n<criteria>Successful operation</criteria>\n<criteria>awplus#</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Traffic_Test(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Traffic_Test\", \"erase startup-config\", new string[] { \"\"Deleting...\", \"Successful operation\", \"awplus#\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>y</command>\n<criteria>Press <Ctrl+B> for the Boot Menu</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ClearWNC(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ClearWNC\", \"y\", new string[] { \"\"Press <Ctrl+B> for the Boot Menu\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>ext4ls mmc 0:1</command>\n<criteria>cn9131-R20V.itb</criteria>\n<criteria>default.cfg</criteria>\n<criteria>.tar.gz.</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic ClearWNC(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ClearWNC\", \"ext4ls mmc 0:1\", new string[] { \"\"cn9131-R20V.itb\", \"default.cfg\", \".tar.gz.\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Ctrl+B</command>\n<criteria>Bootloader 8.10.0 loaded</criteria>\n<criteria>Press <Ctrl+B> for the Boot Menu</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic Switch_Cus_FW(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Switch_Cus_FW\", \"Ctrl+B\", new string[] { \"\"Bootloader 8.10.0 loaded\", \"Press <Ctrl+B> for the Boot Menu\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>install source flash:sonic-aboot-broadcom-20220531.17.swi</command>\n<criteria>Installation succeeded</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic InstallFW(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"InstallFW\", \"install source flash:sonic-aboot-broadcom-20220531.17.swi\", new string[] { \"\"Installation succeeded\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>ssh -4 admin:password@<192.168.1.1></command>\n<criteria>admin@sonic:~$</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic SSHTest(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"SSHTest\", \"ssh -4 admin:password@<192.168.1.1>\", new string[] { \"\"admin@sonic:~$\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show version</command>\n<criteria>SOoiC.2022053asw1.17</criteria>\n<criteria>x86_64-Harry_720dt_48s</criteria>\n<criteria>WAS2227244523</criteria>",
+        "input": "",
+        "output": "Answer:Although the number of commands and criteria is not equal, since there is only one command and multiple criteria, with no repetition in the criteria content, the CommandAndCheck function can be used. This involves using the single command and checking all the criteria, as shown below:<test_program>\\npublic CheckVer(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckVer\", \"show version\", new string[] { \"\"SOoiC.2022053asw1.17\", \"x86_64-Harry_720dt_48s\", \"WAS2227244523\"\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>mmc info</command>\n<command>ping 192.168.1.253</command>\n<criteria>016GB</criteria>\n<criteria>User Capacity: 7.3 GiB ENH WRREL</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic peripheral information check 2(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"peripheral information check 2\", \"mmc info\", new string[] { \"016GB\" }, 30);\n\ntestResult = testResult && CommandCheck(\"peripheral information check 2\", \"ping 192.168.1.253\", new string[] { \"User Capacity: 7.3 GiB ENH WRREL\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>ping 192.168.1.254</command>\n<command>env default -a</command>\n<command>setenv ethact eth0</command>\n<criteria>3 GiB</criteria>\n<criteria>Firmware version: 12.1.3.0</criteria>\n<criteria>Using B0 firmware</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Check Ethernet 10G link(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Check Ethernet 10G link\", \"ping 192.168.1.254\", new string[] { \"3 GiB\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Check Ethernet 10G link\", \"env default -a\", new string[] { \"Firmware version: 12.1.3.0\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Check Ethernet 10G link\", \"setenv ethact eth0\", new string[] { \"Using B0 firmware\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>setenv ethaddr <DUT MAC></command>\n<command>saveenv</command>\n<criteria>eth0 PHY4 up Speed :10000 Full duplex</criteria>\n<criteria>host 192.168.1.253 is alive</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic peripheral information check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"peripheral information check\", \"setenv ethaddr <DUT MAC>\", new string[] { \"eth0 PHY4 up Speed :10000 Full duplex\" }, 30);\n\ntestResult = testResult && CommandCheck(\"peripheral information check\", \"saveenv\", new string[] { \"host 192.168.1.253 is alive\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>run nas</command>\n<command>tecro 0 1 4 1</command>\n<command>tecro 0 1 5 1</command>\n<criteria>done</criteria>\n<criteria>qca-wifi loaded</criteria>\n<criteria>0x41 LTC9105 POWER_MONITOR Test</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Write Ethernet MAC and Save u-boot ENV(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Write Ethernet MAC and Save u-boot ENV\", \"run nas\", new string[] { \"done\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Write Ethernet MAC and Save u-boot ENV\", \"tecro 0 1 4 1\", new string[] { \"qca-wifi loaded\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Write Ethernet MAC and Save u-boot ENV\", \"tecro 0 1 5 1\", new string[] { \"0x41 LTC9105 POWER_MONITOR Test\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 5 1 0</command>\n<command>Get emmc info</command>\n<criteria>HS400</criteria>\n<criteria>016GB2 7.34 GiB</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic EMMC Info Check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"EMMC Info Check\", \"tecro 0 5 1 0\", new string[] { \"HS400\" }, 30);\n\ntestResult = testResult && CommandCheck(\"EMMC Info Check\", \"Get emmc info\", new string[] { \"016GB2 7.34 GiB\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 1 8 0</command>\n<command>tecro 0 1 0 0</command>\n<command>tecro 0 1 2 2</command>\n<criteria>0x49 TMP1075 TEMP_SENSOR Test</criteria>\n<criteria>0x19 LIS2DH12 ACCELEROMETER Test</criteria>\n<criteria>0x46 BMP580 BAROMETER Test</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic TMP1075 Thermal Sensor 2 Check (0x49)(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"TMP1075 Thermal Sensor 2 Check (0x49)\", \"tecro 0 1 8 0\", new string[] { \"0x49 TMP1075 TEMP_SENSOR Test\" }, 30);\n\ntestResult = testResult && CommandCheck(\"TMP1075 Thermal Sensor 2 Check (0x49)\", \"tecro 0 1 0 0\", new string[] { \"0x19 LIS2DH12 ACCELEROMETER Test\" }, 30);\n\ntestResult = testResult && CommandCheck(\"TMP1075 Thermal Sensor 2 Check (0x49)\", \"tecro 0 1 2 2\", new string[] { \"0x46 BMP580 BAROMETER Test\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 2</command>\n<command>i2cdetect -r -y 0</command>\n<criteria>0x40 LTC9105 POWER_MONITOR Test</criteria>\n<criteria>0x48 TMP1075 TEMP_SENSOR Test</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Upgrade WNC FW to eMMC flash(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Upgrade WNC FW to eMMC flash\", \"tecro 0 2\", new string[] { \"0x40 LTC9105 POWER_MONITOR Test\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Upgrade WNC FW to eMMC flash\", \"i2cdetect -r -y 0\", new string[] { \"0x48 TMP1075 TEMP_SENSOR Test\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 1 7 0</command>\n<command>tecro 0 1 6 3</command>\n<command>tecro 0 4</command>\n<criteria>Secondary CPC v4.3.2</criteria>\n<criteria>Daemon startup was successful.</criteria>\n<criteria>logging switched</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic TMP1075 Thermal Sensor 1 Check (0x48)(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"TMP1075 Thermal Sensor 1 Check (0x48)\", \"tecro 0 1 7 0\", new string[] { \"Secondary CPC v4.3.2\" }, 30);\n\ntestResult = testResult && CommandCheck(\"TMP1075 Thermal Sensor 1 Check (0x48)\", \"tecro 0 1 6 3\", new string[] { \"Daemon startup was successful.\" }, 30);\n\ntestResult = testResult && CommandCheck(\"TMP1075 Thermal Sensor 1 Check (0x48)\", \"tecro 0 4\", new string[] { \"logging switched\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tecro 0 2</command>\n<command>i2cdetect -r -y 1</command>\n<criteria>i2cdetect -r -y 2</criteria>\n<criteria>Upgrade chip firmware</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic DDR4 Memory Test(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"DDR4 Memory Test\", \"tecro 0 2\", new string[] { \"i2cdetect -r -y 2\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DDR4 Memory Test\", \"i2cdetect -r -y 1\", new string[] { \"Upgrade chip firmware\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>i2cdetect -r -y 7</command>\n<command>i2cdetect -r -y 6</command>\n<command>i2cdetect -r -y 5</command>\n<criteria>40: 40 41 -- -- -- -- 46 -- -- -- -- -- -- -- -- --</criteria>\n<criteria>10: -- -- -- -- -- -- -- -- -- 19 -- -- -- -- -- --</criteria>\n<criteria>20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- UU --</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic I2C Bus Check(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"I2C Bus Check\", \"i2cdetect -r -y 7\", new string[] { \"40: 40 41 -- -- -- -- 46 -- -- -- -- -- -- -- -- --\" }, 30);\n\ntestResult = testResult && CommandCheck(\"I2C Bus Check\", \"i2cdetect -r -y 6\", new string[] { \"10: -- -- -- -- -- -- -- -- -- 19 -- -- -- -- -- --\" }, 30);\n\ntestResult = testResult && CommandCheck(\"I2C Bus Check\", \"i2cdetect -r -y 5\", new string[] { \"20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- UU --\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>xyzzy</command>\n<command>eth_init</command>\n<criteria>Autoboot in 5 seconds</criteria>\n<criteria>IPQ9574#</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Upgrade REL FW(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Upgrade REL FW\", \"xyzzy\", new string[] { \"Autoboot in 5 seconds\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Upgrade REL FW\", \"eth_init\", new string[] { \"IPQ9574#\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>y</command>\n<command>b</command>\n<command>reset</command>\n<criteria>Blow Success</criteria>\n<criteria>Autoboot in 5 seconds</criteria>\n<criteria>Select entry method? [a/b]</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Boot up to Catalyst OS(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Boot up to Catalyst OS\", \"y\", new string[] { \"Blow Success\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Boot up to Catalyst OS\", \"b\", new string[] { \"Autoboot in 5 seconds\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Boot up to Catalyst OS\", \"reset\", new string[] { \"Select entry method? [a/b]\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cd C:\\Cisco\\ATOM</command>\n<command>3074</command>\n<criteria>Enter Cert Chain data:</criteria>\n<criteria>Do you wish to enter u-boot shell? [y/n]</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Unlock Bootloader(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Unlock Bootloader\", \"cd C:\\Cisco\\ATOM\", new string[] { \"Enter Cert Chain data:\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Unlock Bootloader\", \"3074\", new string[] { \"Do you wish to enter u-boot shell? [y/n]\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>printshenv</command>\n<command>boot_catalyst_qca</command>\n<command>cisco</command>\n<criteria>Signature verification PASSED</criteria>\n<criteria>ipv6 gw config loop in discovery timer expiry</criteria>\n<criteria>Password:</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Print shared environment settings(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Print shared environment settings\", \"printshenv\", new string[] { \"Signature verification PASSED\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Print shared environment settings\", \"boot_catalyst_qca\", new string[] { \"ipv6 gw config loop in discovery timer expiry\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Print shared environment settings\", \"cisco\", new string[] { \"Password:\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Enable</command>\n<command>391c651a8820734a8b6067164920bfe6ec685fd94227d879e526e67b58ddec23</command>\n<criteria>c941618a9af6b6302217a7a4f0590ce66918ba906e320b4360516b88a744ed69</criteria>\n<criteria>Enter Response Nonce:</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic Verify Catalyst OS(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"Verify Catalyst OS\", \"Enable\", new string[] { \"c941618a9af6b6302217a7a4f0590ce66918ba906e320b4360516b88a744ed69\" }, 30);\n\ntestResult = testResult && CommandCheck(\"Verify Catalyst OS\", \"391c651a8820734a8b6067164920bfe6ec685fd94227d879e526e67b58ddec23\", new string[] { \"Enter Response Nonce:\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command><Control-C></command>\n<command>dd if=/dev/nvme0n1p3 bs=1 count=6 2>/dev/null</command>\n<command>tpm2util stm --status</command>\n<criteria>Aboot#</criteria>\n<criteria>070701</criteria>\n<criteria>ActiveTPMInstanceVersion: 1.258 (0x00010102)</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic EnterAboot(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"EnterAboot\", \"<Control-C>\", new string[] { \"Aboot#\" }, 30);\n\ntestResult = testResult && CommandCheck(\"EnterAboot\", \"dd if=/dev/nvme0n1p3 bs=1 count=6 2>/dev/null\", new string[] { \"070701\" }, 30);\n\ntestResult = testResult && CommandCheck(\"EnterAboot\", \"tpm2util stm --status\", new string[] { \"ActiveTPMInstanceVersion: 1.258 (0x00010102)\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi</command>\n<command>reboot</command>\n<criteria>InactiveTPMInstanceVersion: 1.258 (0x00010102)</criteria>\n<criteria>Upgrade counter: 0</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckTPMVersion(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckTPMVersion\", \"tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi\", new string[] { \"InactiveTPMInstanceVersion: 1.258 (0x00010102)\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckTPMVersion\", \"reboot\", new string[] { \"Upgrade counter: 0\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tpm2util stm \u2013status</command>\n<command>tpm2util stm fu </command>\n<command>securebootctl mfg -setup</command>\n<criteria>Starting Firmware Upgrade</criteria>\n<criteria>Post-upgrade counter: 0</criteria>\n<criteria>ActiveTPMInstanceVersion: 1.512 (0x00010200)</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic UpdateActiveTPM(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"UpdateActiveTPM\", \"tpm2util stm \u2013status\", new string[] { \"Starting Firmware Upgrade\" }, 30);\n\ntestResult = testResult && CommandCheck(\"UpdateActiveTPM\", \"tpm2util stm fu \", new string[] { \"Post-upgrade counter: 0\" }, 30);\n\ntestResult = testResult && CommandCheck(\"UpdateActiveTPM\", \"securebootctl mfg -setup\", new string[] { \"ActiveTPMInstanceVersion: 1.512 (0x00010200)\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>securebootctl mfg -display</command>\n<command>tpm2util sb \u2013enable unlockspiflash</command>\n<criteria>InactiveTPMInstanceVersion: 1.258 (0x00010102)</criteria>\n<criteria>TPM MFG setup done</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckActiveTPM(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckActiveTPM\", \"securebootctl mfg -display\", new string[] { \"InactiveTPMInstanceVersion: 1.258 (0x00010102)\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckActiveTPM\", \"tpm2util sb \u2013enable unlockspiflash\", new string[] { \"TPM MFG setup done\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command><DUT power cycle></command>\n<command>root</command>\n<command>echo \"DataFormat: 0003\" > prefdl_data</command>\n<criteria>wnc_diag login: </criteria>\n<criteria>disabled: 1</criteria>\n<criteria>unlockspiflash: 1</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheeckSecureBootAndSPI(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheeckSecureBootAndSPI\", \"<DUT power cycle>\", new string[] { \"wnc_diag login: \" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheeckSecureBootAndSPI\", \"root\", new string[] { \"disabled: 1\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheeckSecureBootAndSPI\", \"echo \"DataFormat: 0003\" > prefdl_data\", new string[] { \"unlockspiflash: 1\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>echo \"ASY: ASY063290102\" >> prefdl_data</command>\n<command>echo \"SKU: AWE-5510\" >> prefdl_data</command>\n<criteria>Result: PASS</criteria>\n<criteria>1 4 1 3</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic WriteAsyToPrefdl(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"WriteAsyToPrefdl\", \"echo \"ASY: ASY063290102\" >> prefdl_data\", new string[] { \"Result: PASS\" }, 30);\n\ntestResult = testResult && CommandCheck(\"WriteAsyToPrefdl\", \"echo \"SKU: AWE-5510\" >> prefdl_data\", new string[] { \"1 4 1 3\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>echo \"MacAddrBase: 2c:dd:e9:fc:f6:9c\" >> prefdl_data</command>\n<command>echo \"HwApi: 03.00\" >> prefdl_data</command>\n<command>echo \"HwEpoch: 01.00\" >> prefdl_data</command>\n<criteria>Test Command: cat /usr/local/prefdl_data</criteria>\n<criteria>Test Description: Read all information and check</criteria>\n<criteria>DataFormat: 0003</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic WriteMacAddrBaseToPrefdl(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"WriteMacAddrBaseToPrefdl\", \"echo \"MacAddrBase: 2c:dd:e9:fc:f6:9c\" >> prefdl_data\", new string[] { \"Test Command: cat /usr/local/prefdl_data\" }, 30);\n\ntestResult = testResult && CommandCheck(\"WriteMacAddrBaseToPrefdl\", \"echo \"HwApi: 03.00\" >> prefdl_data\", new string[] { \"Test Description: Read all information and check\" }, 30);\n\ntestResult = testResult && CommandCheck(\"WriteMacAddrBaseToPrefdl\", \"echo \"HwEpoch: 01.00\" >> prefdl_data\", new string[] { \"DataFormat: 0003\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>auto_burnin -c \"CFG_AUTO_BURNIN_PHASE=PreBurnIn\"</command>\n<command>auto_burnin -m \"CFG_AUTO_BURNIN_DELAY_START_SEC=60\"</command>\n<criteria>SKU: ZTX-7250S-16S</criteria>\n<criteria>SerialNumber: WTW21481002</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic SetupBurnInStage(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"SetupBurnInStage\", \"auto_burnin -c \"CFG_AUTO_BURNIN_PHASE=PreBurnIn\"\", new string[] { \"SKU: ZTX-7250S-16S\" }, 30);\n\ntestResult = testResult && CommandCheck(\"SetupBurnInStage\", \"auto_burnin -m \"CFG_AUTO_BURNIN_DELAY_START_SEC=60\"\", new string[] { \"SerialNumber: WTW21481002\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cat /usr/local/prefdl_data</command>\n<command>diag sys cpu rtc get</command>\n<command>diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\"</command>\n<criteria>HwApi: 01.00</criteria>\n<criteria>SID: IndependenceRuby2</criteria>\n<criteria>MacAddrBase: 2c:dd:e9:fc:f6:9c</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckPrefdl(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckPrefdl\", \"cat /usr/local/prefdl_data\", new string[] { \"HwApi: 01.00\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckPrefdl\", \"diag sys cpu rtc get\", new string[] { \"SID: IndependenceRuby2\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckPrefdl\", \"diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\"\", new string[] { \"MacAddrBase: 2c:dd:e9:fc:f6:9c\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>echo \"HwRev: 00.03\" >> prefdl_data</command>\n<command>echo \"SID: Independence\" >> prefdl_data</command>\n<criteria>HwRev: 11.03</criteria>\n<criteria>HwEpoch: 01.00</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic UpdateInactiveTPM(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"UpdateInactiveTPM\", \"echo \"HwRev: 00.03\" >> prefdl_data\", new string[] { \"HwRev: 11.03\" }, 30);\n\ntestResult = testResult && CommandCheck(\"UpdateInactiveTPM\", \"echo \"SID: Independence\" >> prefdl_data\", new string[] { \"HwEpoch: 01.00\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>diag mgmt oob test packet srcip=192.168.1.1</command>\n<command>destip=192.168.1.100 speed=1000 loopback=1 count=3</command>\n<command>diag sys scd scan_chain test</command>\n<criteria>ASY: ASY083160101</criteria>\n<criteria>MfgTime2: 20220427211010</criteria>\n<criteria>MfgTime: 20200101000000</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic TestMGMTPacketPath(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"TestMGMTPacketPath\", \"diag mgmt oob test packet srcip=192.168.1.1\", new string[] { \"ASY: ASY083160101\" }, 30);\n\ntestResult = testResult && CommandCheck(\"TestMGMTPacketPath\", \"destip=192.168.1.100 speed=1000 loopback=1 count=3\", new string[] { \"MfgTime2: 20220427211010\" }, 30);\n\ntestResult = testResult && CommandCheck(\"TestMGMTPacketPath\", \"diag sys scd scan_chain test\", new string[] { \"MfgTime: 20200101000000\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>diag sys gpio nim test hide_log=1</command>\n<criteria>Crc: 16E5D3D7</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckGpioConnectToNIM(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckGpioConnectToNIM\", \"diag sys gpio nim test hide_log=1\", new string[] { \"Crc: 16E5D3D7\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>devmem 0xfe0b5000 32 0x20000000</command>\n<command>devmem 0xfe0b1400 w 0x0</command>\n<criteria>Pre BurnIn: PASS</criteria>\n<criteria>BurnIn: PASS</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ConfigMarginLow(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ConfigMarginLow\", \"devmem 0xfe0b5000 32 0x20000000\", new string[] { \"Pre BurnIn: PASS\" }, 30);\n\ntestResult = testResult && CommandCheck(\"ConfigMarginLow\", \"devmem 0xfe0b1400 w 0x0\", new string[] { \"BurnIn: PASS\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>auto_burnin \u2013e</command>\n<command>check_pre_cycle=$(grep \"Result : PASS\" /mnt/flash/mfg/autoBurnIn/logs/last/cmdd/pre_burnin_* | wc -l)</command>\n<command>Result: 1</command>\n<criteria>SKU: ZTX-7250S-16S</criteria>\n<criteria>Certificate:</criteria>\n<criteria>SerialNumber: WTW21481002</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic SetupPcieBifurcation(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"SetupPcieBifurcation\", \"auto_burnin \u2013e\", new string[] { \"SKU: ZTX-7250S-16S\" }, 30);\n\ntestResult = testResult && CommandCheck(\"SetupPcieBifurcation\", \"check_pre_cycle=$(grep \"Result : PASS\" /mnt/flash/mfg/autoBurnIn/logs/last/cmdd/pre_burnin_* | wc -l)\", new string[] { \"Certificate:\" }, 30);\n\ntestResult = testResult && CommandCheck(\"SetupPcieBifurcation\", \"Result: 1\", new string[] { \"SerialNumber: WTW21481002\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>echo \"Result: $check_pre_cycle\"</command>\n<criteria>HwApi: 01.00</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ShowBurnInCycle(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowBurnInCycle\", \"echo \"Result: $check_pre_cycle\"\", new string[] { \"HwApi: 01.00\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>check_cycle_1=$(grep \"Result : PASS\" /mnt/flash/mfg/autoBurnIn/logs/last/cmdd/burnin_1_* | wc -l)</command>\n<command>echo \"Result: $check_cycle_1\"</command>\n<criteria>SID: IndependenceRuby2</criteria>\n<criteria>MacAddrBase: 2c:dd:e9:fc:f6:9c</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckBurnInResult(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckBurnInResult\", \"check_cycle_1=$(grep \"Result : PASS\" /mnt/flash/mfg/autoBurnIn/logs/last/cmdd/burnin_1_* | wc -l)\", new string[] { \"SID: IndependenceRuby2\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckBurnInResult\", \"echo \"Result: $check_cycle_1\"\", new string[] { \"MacAddrBase: 2c:dd:e9:fc:f6:9c\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>check_cycle_16=$(grep \"Result : PASS\" /mnt/flash/mfg/autoBurnIn/logs/last/cmdd/burnin_16_* | wc -l)</command>\n<command>echo \"Result: $check_cycle_16\"</command>\n<command>PSU_black_box_tool.sh dump all</command>\n<criteria>HwRev: 11.03</criteria>\n<criteria>HwEpoch: 01.00</criteria>\n<criteria>ASY: ASY083160101</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic PrintPsuBlackBox(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"PrintPsuBlackBox\", \"check_cycle_16=$(grep \"Result : PASS\" /mnt/flash/mfg/autoBurnIn/logs/last/cmdd/burnin_16_* | wc -l)\", new string[] { \"HwRev: 11.03\" }, 30);\n\ntestResult = testResult && CommandCheck(\"PrintPsuBlackBox\", \"echo \"Result: $check_cycle_16\"\", new string[] { \"HwEpoch: 01.00\" }, 30);\n\ntestResult = testResult && CommandCheck(\"PrintPsuBlackBox\", \"PSU_black_box_tool.sh dump all\", new string[] { \"ASY: ASY083160101\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>PSU_black_box_tool.sh get all all</command>\n<criteria>SWI=flash:EOS.swi</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ShowBurnInLogs(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowBurnInLogs\", \"PSU_black_box_tool.sh get all all\", new string[] { \"SWI=flash:EOS.swi\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tar -C /mnt/flash/mfg -zcf burnInlog_<Serial Number>.tar.gz autoBurnIn/logs lb_detect_daemon; [ $? -eq 0 ] && echo \"Result: PASS\" || echo \"Result: FAIL\"</command>\n<command>ifconfig eth0 192.168.1.1 netmask 255.255.255.0</command>\n<criteria>DISABLE=True</criteria>\n<criteria>Secure Boot: enabled</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic SetupNetwork(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"SetupNetwork\", \"tar -C /mnt/flash/mfg -zcf burnInlog_<Serial Number>.tar.gz autoBurnIn/logs lb_detect_daemon; [ $? -eq 0 ] && echo \"Result: PASS\" || echo \"Result: FAIL\"\", new string[] { \"DISABLE=True\" }, 30);\n\ntestResult = testResult && CommandCheck(\"SetupNetwork\", \"ifconfig eth0 192.168.1.1 netmask 255.255.255.0\", new string[] { \"Secure Boot: enabled\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tftp -p -l burnInlog_<Serial Number>.tar.gz 192.168.1.100</command>\n<command>diag fan pwm duty_cycle=50</command>\n<command>diag fan speed test=4886,9072</command>\n<criteria>Password default storage: flash</criteria>\n<criteria>DataFormat: 0003</criteria>\n<criteria>SerialNumber: WTW23070247</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic DownloadBurnInLogs(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"DownloadBurnInLogs\", \"tftp -p -l burnInlog_<Serial Number>.tar.gz 192.168.1.100\", new string[] { \"Password default storage: flash\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DownloadBurnInLogs\", \"diag fan pwm duty_cycle=50\", new string[] { \"DataFormat: 0003\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DownloadBurnInLogs\", \"diag fan speed test=4886,9072\", new string[] { \"SerialNumber: WTW23070247\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show hardware eeprom</command>\n<command>show version detail | tail -n 10</command>\n<criteria>SKU: ZTX-7250S-16S</criteria>\n<criteria>SID: IndependenceRuby2</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ShowHardwareEeprom(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowHardwareEeprom\", \"show hardware eeprom\", new string[] { \"SKU: ZTX-7250S-16S\" }, 30);\n\ntestResult = testResult && CommandCheck(\"ShowHardwareEeprom\", \"show version detail | tail -n 10\", new string[] { \"SID: IndependenceRuby2\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>admin</command>\n<criteria>localhost></criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic LoginEOS(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"LoginEOS\", \"admin\", new string[] { \"localhost>\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>enable</command>\n<command>config</command>\n<criteria>localhost(config)#</criteria>\n<criteria>HwApi: 01.00</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic EnableShell(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"EnableShell\", \"enable\", new string[] { \"localhost(config)#\" }, 30);\n\ntestResult = testResult && CommandCheck(\"EnableShell\", \"config\", new string[] { \"HwApi: 01.00\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show version</command>\n<command>show inventory</command>\n<command>show management security</command>\n<criteria>Arista ZTX-7000-F</criteria>\n<criteria>Hardware version: 11.03</criteria>\n<criteria>Serial number: WTW23070247</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ShowVersion(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowVersion\", \"show version\", new string[] { \"Arista ZTX-7000-F\" }, 30);\n\ntestResult = testResult && CommandCheck(\"ShowVersion\", \"show inventory\", new string[] { \"Hardware version: 11.03\" }, 30);\n\ntestResult = testResult && CommandCheck(\"ShowVersion\", \"show management security\", new string[] { \"Serial number: WTW23070247\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>cat /dev/null > /mnt/flash/startup-config</command>\n<criteria>STM ST33TPHF2X TPM 2.0 (1.512)</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ShowManagementSecurity(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ShowManagementSecurity\", \"cat /dev/null > /mnt/flash/startup-config\", new string[] { \"STM ST33TPHF2X TPM 2.0 (1.512)\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>show boot | json</command>\n<command>bash sudo flashrom</command>\n<command>bash sudo fdisk -l /dev/nvme0n1</command>\n<criteria>\"securebootSupported\": true,</criteria>\n<criteria>NAC E-Track ID: 0x8000df87</criteria>\n<criteria>Hardware is Ethernet, address is ec8a.4804.fcae</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic DisplayBootInformation(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"DisplayBootInformation\", \"show boot | json\", new string[] { \"\"securebootSupported\": true,\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DisplayBootInformation\", \"bash sudo flashrom\", new string[] { \"NAC E-Track ID: 0x8000df87\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DisplayBootInformation\", \"bash sudo fdisk -l /dev/nvme0n1\", new string[] { \"Hardware is Ethernet, address is ec8a.4804.fcae\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>bash sudo scd read 0x1410</command>\n<command>show system environment power detail</command>\n<criteria>Width x8</criteria>\n<criteria>EOS.swi</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic VerifyScdPciBifurcation(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"VerifyScdPciBifurcation\", \"bash sudo scd read 0x1410\", new string[] { \"Width x8\" }, 30);\n\ntestResult = testResult && CommandCheck(\"VerifyScdPciBifurcation\", \"show system environment power detail\", new string[] { \"EOS.swi\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>diag mgmt usb ether test num_usb2_0=1 criteria_2_0=150 duration=10 side_check=2</command>\n<criteria>dhcpcd eth0</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic TestFourthUSBEthernet(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"TestFourthUSBEthernet\", \"diag mgmt usb ether test num_usb2_0=1 criteria_2_0=150 duration=10 side_check=2\", new string[] { \"dhcpcd eth0\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>setenv ethaddr 00:0B:6B:EF:FF:9C</command>\n<command>saveenv</command>\n<command>ping 192.168.1.254</command>\n<criteria>cat /proc/sys/kernel/version</criteria>\n<criteria>#1 SMP Fri Jul 8 14:52:10 PDT 2022</criteria>\n<criteria>mD67415BC4B0E:/#</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic WriteEthaddr(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"WriteEthaddr\", \"setenv ethaddr 00:0B:6B:EF:FF:9C\", new string[] { \"cat /proc/sys/kernel/version\" }, 30);\n\ntestResult = testResult && CommandCheck(\"WriteEthaddr\", \"saveenv\", new string[] { \"#1 SMP Fri Jul 8 14:52:10 PDT 2022\" }, 30);\n\ntestResult = testResult && CommandCheck(\"WriteEthaddr\", \"ping 192.168.1.254\", new string[] { \"mD67415BC4B0E:/#\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>tftpboot CW9166I_VE_meraki_board_init.img && source $fileaddr</command>\n<criteria>Programing EN cookie</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic LoadBoardInit(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"LoadBoardInit\", \"tftpboot CW9166I_VE_meraki_board_init.img && source $fileaddr\", new string[] { \"Programing EN cookie\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>ping 192.168.1.254</command>\n<command>devmem 0x1010004 w 0x0</command>\n<criteria>Bluetooth stack booted: v3.2.4-b297</criteria>\n<criteria>100018.605313</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic UBootEthTest(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"UBootEthTest\", \"ping 192.168.1.254\", new string[] { \"Bluetooth stack booted: v3.2.4-b297\" }, 30);\n\ntestResult = testResult && CommandCheck(\"UBootEthTest\", \"devmem 0x1010004 w 0x0\", new string[] { \"100018.605313\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>bmp580 -b 2 \u2013n</command>\n<command>bmp580 -b 2 -w -10</command>\n<command>bmp580 -b 2 -r 0x20</command>\n<criteria>32,0x20</criteria>\n<criteria>-10</criteria>\n<criteria>44550</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic DUTEnvirenmentTest(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"DUTEnvirenmentTest\", \"bmp580 -b 2 \u2013n\", new string[] { \"32,0x20\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DUTEnvirenmentTest\", \"bmp580 -b 2 -w -10\", new string[] { \"-10\" }, 30);\n\ntestResult = testResult && CommandCheck(\"DUTEnvirenmentTest\", \"bmp580 -b 2 -r 0x20\", new string[] { \"44550\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>sleep 1</command>\n<command>devmem 0x1010004 w 0x3</command>\n<criteria>DFU OK</criteria>\n<criteria>WPS PUSH BUTTON EVENT DETECTED</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckBLEApp(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckBLEApp\", \"sleep 1\", new string[] { \"DFU OK\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckBLEApp\", \"devmem 0x1010004 w 0x3\", new string[] { \"WPS PUSH BUTTON EVENT DETECTED\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>mfg pdetect adaptor</command>\n<command>mfg btn wps</command>\n<command>mfg dc</command>\n<criteria>HLH</criteria>\n<criteria>PSE Type = 2</criteria>\n<criteria>PD Class = 4</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckAdaptor(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckAdaptor\", \"mfg pdetect adaptor\", new string[] { \"HLH\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckAdaptor\", \"mfg btn wps\", new string[] { \"PSE Type = 2\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckAdaptor\", \"mfg dc\", new string[] { \"PD Class = 4\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>clix</command>\n<command>mfg i2c test</command>\n<criteria>0x56</criteria>\n<criteria>R6AQ-C4</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic CheckI2C(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"CheckI2C\", \"clix\", new string[] { \"0x56\" }, 30);\n\ntestResult = testResult && CommandCheck(\"CheckI2C\", \"mfg i2c test\", new string[] { \"R6AQ-C4\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Press enter</command>\n<command>dmesg -c > /dev/null</command>\n<criteria>v1.0.0.7</criteria>\n<criteria>Generic ODM DIAG driver v1.0</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic EnterWNCFirmware(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"EnterWNCFirmware\", \"Press enter\", new string[] { \"v1.0.0.7\" }, 30);\n\ntestResult = testResult && CommandCheck(\"EnterWNCFirmware\", \"dmesg -c > /dev/null\", new string[] { \"Generic ODM DIAG driver v1.0\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    },
+    {
+        "instruction": "<command>Press \u201center\u201d to stop autoboot</command>\n<criteria>br-lan: port 1(eth0) entered forwarding state</criteria>",
+        "input": "",
+        "output": "Answer:Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the CommandAndCheck function can be used, where each command is followed by checking one criterion, as shown below:\n<test_program>\\npublic ResetAndEnterWNCFirmware(int retry)\\n{\\n    bool testResult = true;\\n\\n    for (int i = 0; i < retry; i++)\\n    {\\n        testResult = CommandCheck(\"ResetAndEnterWNCFirmware\", \"Press \u201center\u201d to stop autoboot\", new string[] { \"br-lan: port 1(eth0) entered forwarding state\" }, 30);\n\n        if (testResult)\\n            break;\\n    }\\n\\n    return testResult;\\n}\\n</test_program><|end_of_text|>",
+        "history": []
+    }
+]

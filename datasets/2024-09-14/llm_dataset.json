@@ -1,0 +1,14 @@
+[
+    {
+        "instruction": "<command>root</command>\n<criteria>pass</criteria>",
+        "input": "",
+        "output": "Because there is only one <command> tag and one <criteria> tag, we use the fucntion of CommandCheck. And than our output will be like that:\n\npublic test_function(int retry)\n{\n    bool testResult = true;\n\n    for (int i = 0; i < retry; i++)\n    {\n        testResult = CommandCheck(\"test_function\", \"root\", new string[] { \"pass\" }, 30);\n\n        if (testResult)\n            break;\n    }\n\n    return testResult;\n}\n",
+        "history": []
+    },
+    {
+        "instruction": "<command>detect</command>\n<criteria>100%</criteria>",
+        "input": "",
+        "output": "Because there is only one <command> tag and one <criteria> tag, we use the fucntion of CommandCheck. And than our output will be like that:\n\npublic analyze_function(int retry)\n{\n    bool testResult = true;\n\n    for (int i = 0; i < retry; i++)\n    {\n        testResult = CommandCheck(\"analyze_function\", \"detect\", new string[] { \"100%\" }, 30);\n\n        if (testResult)\n            break;\n    }\n\n    return testResult;\n}\n",
+        "history": []
+    }
+]

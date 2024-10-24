@@ -1,10 +1,12 @@
 import json, shutil
 from bs4 import BeautifulSoup
 
-from abstract import file_abstract, convert_to_dataset, convert_to_LLM_dataset
-from generate import generate
-from create_table import create_document
+# from abstract import file_abstract, convert_to_dataset, convert_to_LLM_dataset
+# from generate import generate
+from create_document import create_document
+from create_table import create_table
 from analysis import get_generative_data
+from create_program import main as create_program
 
 
 def get_dataset(llm_dataset_path):
@@ -59,24 +61,24 @@ def main():
     file_path = f"./files/{file_name}"
     folder_path = f"./files/{file_name}"
 
-    model_path = str(input("請輸入 Model 位置: "))
-    prompt_path = str(input("請輸入 Prompt 位置: "))
+    # model_path = str(input("請輸入 Model 位置: "))
+    # prompt_path = str(input("請輸入 Prompt 位置: "))
     output_path = f"{file_path}/generative_result.txt"
 
-    file_abstract(file_path)
-    convert_to_dataset(folder_path)
-    convert_to_LLM_dataset(folder_path, folder_path)
-    shutil.move(file_path, folder_path)
+    # file_abstract(file_path)
+    # convert_to_dataset(folder_path)
+    # convert_to_LLM_dataset(folder_path, folder_path)
+    # shutil.move(file_path, folder_path)
     
     llm_dataset_path = f"{file_path}/llm_datasets.json"
     generative_datas_path = output_path
 
-    generate(
-        model_path=model_path,
-        prompt_path=prompt_path,
-        output_path=output_path,
-        dataset_path=llm_dataset_path
-    )
+    # generate(
+    #     model_path=model_path,
+    #     prompt_path=prompt_path,
+    #     output_path=output_path,
+    #     dataset_path=llm_dataset_path
+    # )
 
     datas = get_conbined_datas(
         llm_dataset_path=llm_dataset_path,
@@ -84,10 +86,20 @@ def main():
     )
     
     docx_path = f"{file_path}/compared.docx"
+    json_path = f"{file_path}/test_table.json"
+
+    create_table(
+        datas=datas,
+        output_file_path=json_path
+    )
 
     create_document(
         datas=datas,
         output_file_path=docx_path
+    )
+
+    create_program(
+        file_name=file_name
     )
 
 if __name__ == '__main__':

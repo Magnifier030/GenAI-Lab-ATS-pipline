@@ -1,0 +1,3 @@
+{
+    "CommandCheck": "CommandCheck(\"[test_item]\", \"[test_command]\", new string[] { \"[pass_criteria]\" }, 30);\n\n"
+}

@@ -55,6 +55,7 @@ def find_tag(content: BeautifulSoup, tags: list, times):
 
 def abstract_keyword(content, target, tags = ['highlight', 'color']):
     soup = BeautifulSoup(content, 'lxml')
+    print(soup.find_all('column'))
     criteria = soup.find_all('column')[target]
     tags = list(itertools.permutations(tags))
 

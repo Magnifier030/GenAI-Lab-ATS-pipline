@@ -1,0 +1,4 @@
+{
+    "CommandCheck_OneByOne": "Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the only function from the functions inside of tag <function> and </function> can be used is CommandCheck, where each command is followed by checking one criterion from the response of the command, as shown below:\n",
+    "CommandCheck_OneByMuti": "Due to the one-to-one correspondence between the number of commands and criteria, it is considered a one-to-one situation. Therefore, the only function from the functions between <function> and </function> can be used is CommandCheck, where each command is followed by checking one criterion, as shown below:\n"
+}

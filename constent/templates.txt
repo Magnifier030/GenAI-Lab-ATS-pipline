@@ -1,0 +1,1 @@
+\npublic [test_item](int retry)\n{\n    bool testResult = true;\n\n    for (int i = 0; i < retry; i++)\n    {\n        [test_function]        if (testResult)\n            break;\n    }\n\n    return testResult;\n}\n
