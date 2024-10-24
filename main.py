@@ -86,7 +86,7 @@ def main():
     )
     
     docx_path = f"{file_path}/compared.docx"
-    json_path = f"{file_path}/test_table.json"
+    json_path = f"{file_path}/generative_test_table.json"
 
     create_table(
         datas=datas,

@@ -1,0 +1,422 @@
+[
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckUsrData",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>mount | grep \"/usr/data\" | grep -c \"rw\"</color></highlight></column><column><highlight value = None><color value = None>1</color></highlight></column></row></table>",
+        "generative_commands": [
+            "mount | grep \"/usr/data\" | grep -c \"rw\""
+        ],
+        "generative_criterias": [
+            "1"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CPUInfo",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>004_cpu_id_info -t \"ARMv7 Processor rev 2 (v7l)\"</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "004_cpu_id_info -t \"ARMv7 Processor rev 2 (v7l)\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "NandInfo",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>008_nand_info -g</color></highlight></column><column><highlight value = None><color value = None>AMD/Spansion k42NJ65</color></highlight></column></row></table>",
+        "generative_commands": [
+            "008_nand_info -g"
+        ],
+        "generative_criterias": [
+            "AMD/Spansion k42NJ65"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "MemSizeCheck",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>007_mem_size -t 510416</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>// Memory will be changed when using Meraki\u2019s firmware.//</color></highlight></column></row></table>",
+        "generative_commands": [
+            "007_mem_size -t 510416"
+        ],
+        "generative_criterias": [
+            "// Memory will be changed when using Meraki\u2019s firmware.//"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckDevID",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>017_ac3_device_id -t \"98DX3233\"</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "017_ac3_device_id -t \"98DX3233\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckBoardID",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>003_hw_board_id -t 010</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "003_hw_board_id -t 010"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckOSVer",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>001_wnc_os_ver -t 0.0.5</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>// 0.0.5 is SW version. Please check SW PN //</color></highlight></column></row></table>",
+        "generative_commands": [
+            "001_wnc_os_ver -t 0.0.5"
+        ],
+        "generative_criterias": [
+            "// 0.0.5 is SW version. Please check SW PN //"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckEEPROM",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>012_eeprom_info -t \" MK120-5FP 600-61030\"</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "012_eeprom_info -t \" MK120-5FP 600-61030\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckHWVer",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>002_hw_ver -t 00</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>// 00 is hardware version //</color></highlight></column></row></table>",
+        "generative_commands": [
+            "002_hw_ver -t 00"
+        ],
+        "generative_criterias": [
+            "// 00 is hardware version //",
+            "// 00 is hardware version //",
+            "// 00 is hardware version //"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckSFPInfo1",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>013_sfp_port_info -p 1 -t \"WNC 1.5W 10G SFP+ LOOPBACK MODULE\"</color></highlight></column><column><highlight value = None><color value = None>Result: PASS </color></highlight></column></row></table>",
+        "generative_commands": [
+            "013_sfp_port_info -p 1 -t \"WNC 1.5W 10G SFP+ LOOPBACK MODULE\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckSFPInfo2",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>013_sfp_port_info -p 2 -t \"WNC 1.5W 10G SFP+ LOOPBACK MODULE\"</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "013_sfp_port_info -p 2 -t \"WNC 1.5W 10G SFP+ LOOPBACK MODULE\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckSFPSpeed1",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>014_sfp_low_speed -t 1</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "014_sfp_low_speed -t 1"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckSFPSpeed2",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>014_sfp_low_speed -t 2</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "014_sfp_low_speed -t 2"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckSFPLoading1",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>015_sfp_port_loading -l 1 -p 1</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "015_sfp_port_loading -l 1 -p 1"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "CheckSFPLoading2",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>015_sfp_port_loading -l 1 -p 2</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "015_sfp_port_loading -l 1 -p 2"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "POEInit",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>010_poe_load -i</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "010_poe_load -i"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "POEEnable",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>010_poe_load -e 1-8</color></highlight></column><column><highlight value = None><color value = None>Port 1 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 2 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 3 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 4 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 5 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 6 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 7 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Port 8 is enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "010_poe_load -e 1-8"
+        ],
+        "generative_criterias": [
+            "Port 1 is enabled",
+            "Port 2 is enabled",
+            "Port 3 is enabled",
+            "Port 4 is enabled",
+            "Port 5 is enabled",
+            "Port 6 is enabled",
+            "Port 7 is enabled",
+            "Port 8 is enabled",
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "TrafficTest",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>101_traffic_test -d 10</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "101_traffic_test -d 10"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "POETest",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>010_poe_load -t 13.27,19.03 -p 1-8</color></highlight></column><column><highlight value = None><color value = None>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "010_poe_load -t 13.27,19.03 -p 1-8"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "FrontPortLED_Amber",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>104_front_port_led -s amber</color></highlight></column><column><highlight value = None><color value = None>/ #</color></highlight></column></row></table>",
+        "generative_commands": [
+            "104_front_port_led -s amber"
+        ],
+        "generative_criterias": [
+            "/ #"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "SFPLEDOn",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>105_sfp_port_led -s 1</color></highlight></column><column><highlight value = None><color value = None>/ #</color></highlight></column></row></table>",
+        "generative_commands": [
+            "105_sfp_port_led -s 1"
+        ],
+        "generative_criterias": [
+            "/ #"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "SysLEDOn",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>011_sys_led -s 1</color></highlight></column><column><highlight value = None><color value = None>/ #</color></highlight></column></row></table>",
+        "generative_commands": [
+            "011_sys_led -s 1"
+        ],
+        "generative_criterias": [
+            "/ #"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "SysLEDOff",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>011_sys_led -s 0</color></highlight></column><column><highlight value = None><color value = None>/ #</color></highlight></column></row></table>",
+        "generative_commands": [
+            "011_sys_led -s 0"
+        ],
+        "generative_criterias": [
+            "/ #"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "SetMAC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>fixed_net_info -s SN0123456789 -m 00:11:22:33:44:55</color></highlight></column><column><highlight value = None><color value = None>Fixed net info is updated</color></highlight></column></row></table>",
+        "generative_commands": [
+            "fixed_net_info -s SN0123456789 -m 00:11:22:33:44:55"
+        ],
+        "generative_criterias": [
+            "Fixed net info is updated"
+        ]
+    },
+    {
+        "test_station": "Test Items PCBA station",
+        "test_item": "Sync",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>sync</color></highlight></column><column><highlight value = None><color value = None>/ #</color></highlight></column></row></table>",
+        "generative_commands": [
+            "sync"
+        ],
+        "generative_criterias": [
+            "/ #"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "CheckProductID",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm product_id read</color></highlight></column><column><highlight value = None><color value = None>MS227-5FP 460-61030</color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm product_id read"
+        ],
+        "generative_criterias": [
+            "MS227-5FP 460-61030"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "CheckFWVer",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm fw_version</color></highlight></column><column><highlight value = None><color value = None>T-201805241537-Gb152632-NKUST</color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm fw_version"
+        ],
+        "generative_criterias": [
+            "T-201805241537-Gb152632-NKUST"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "WriteMAC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm mac write 13:AC:0A:4D:3B:F1</color></highlight></column><column><highlight value = None><color value = None><NKUST></color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm mac write 13:AC:0A:4D:3B:F1"
+        ],
+        "generative_criterias": []
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "VerifyMAC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm mac_verify</color></highlight></column><column><highlight value = None><color value = None>13:AC:0A:4D:3B:F1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm mac_verify"
+        ],
+        "generative_criterias": [
+            "13:AC:0A:4D:3B:F1",
+            "PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "WriteSN",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm serial_num write QQDN-4KJ9-YG2W</color></highlight></column><column><highlight value = None><color value = None><NKUST></color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm serial_num write QQDN-4KJ9-YG2W"
+        ],
+        "generative_criterias": []
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "VerifySN",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm serial_verify</color></highlight></column><column><highlight value = None><color value = None>QQDN-4KJ9-YG2W</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm serial_verify"
+        ],
+        "generative_criterias": [
+            "QQDN-4KJ9-YG2W",
+            "PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "CheckServices",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm tam services status</color></highlight></column><column><highlight value = None><color value = None>Running</color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm tam services status"
+        ],
+        "generative_criterias": [
+            "Running"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "TAMProvision",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm tam provision 10.128.128.254</color></highlight></column><column><highlight value = None><color value = None><NKUST></color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm tam provision 10.128.128.254"
+        ],
+        "generative_criterias": []
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "TAMShow",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm tam show</color></highlight></column><column><highlight value = None><color value = None>CN=High</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>CN=(53)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><NKUST></color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm tam show"
+        ],
+        "generative_criterias": [
+            "CN=High",
+            "CN=(53)",
+            ""
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "TAMVersion",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>odm tam version</color></highlight></column><column><highlight value = None><color value = None>TAM: </color><color value = '#FF0000;'>1.4.591</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>FPGA: </color><color value = '#FF0000;'>0x100</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Lib:</color><color value = '#FF0000;'> 6.2.2</color></highlight></column></row></table>",
+        "generative_commands": [
+            "odm tam version"
+        ],
+        "generative_criterias": [
+            "1.4.591",
+            "0x100",
+            "6.2.2"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "CheckProjectVer",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>WNC Check Ver</color></highlight></column><column><highlight value = None><color value = None>Partner: </color><color value = '#FF0000;'>NKUST</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Date: </color><color value = '#FF0000;'>10/28</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Time: </color><color value = '#FF0000;'>4HR</color></highlight></column></row></table>",
+        "generative_commands": [
+            "WNC Check Ver"
+        ],
+        "generative_criterias": [
+            "NKUST",
+            "10/28",
+            "4HR"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- Final station",
+        "test_item": "SystemTest",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>sys -t 100 -s 0 -c 8.8.8.8</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>sys -g</color></highlight></column><column><highlight value = None><color value = None>Server set ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Speed : </color><color value = '#FF0000;'>1000MB</color></highlight></column></row></table>",
+        "generative_commands": [
+            "sys -t 100 -s 0 -c 8.8.8.8",
+            "sys -g"
+        ],
+        "generative_criterias": [
+            "1000MB"
+        ]
+    }
+]

@@ -6,6 +6,10 @@ def set_function(function:str, test_item:str, test_command:list, pass_criteria:l
         functions = []
         index = 0 
         for command, criteria in zip(commands, criterias):
+            command = command.replace("\"", "\\\"")
+            criteria = criteria.replace("\"", "\\\"")
+            criteria = f'"{criteria}"'
+            
             function_text = function.replace("[test_item]", test_item)
             function_text = function_text.replace("[test_command]", command)
             function_text = function_text.replace("[pass_criteria]", criteria)
@@ -15,17 +19,24 @@ def set_function(function:str, test_item:str, test_command:list, pass_criteria:l
             functions.append(function_text)
 
         function = "".join(functions)
+        print(function)
         return function
     
     def CommandCheck_OneByMuti(function:str, test_item:str, commands:list, criterias:list):
-        criterias_text = ", ".join([
-            f'"{criteria}"' for criteria in criterias
-        ])
+        commands[0] = commands[0].replace("\"", "\\\"")
+        criterias_text = ""
+        criterias_texts = []
+        for criteria in criterias:
+            criteria = criteria.replace("\"", "\\\"")
+            criterias_texts.append(f'"{criteria}"')
+        criterias_text = ", ".join(criterias_texts)
+        print(criterias_text)
+
         function_text = function.replace("[test_item]", test_item)
         function_text = function_text.replace("[test_command]", commands[0])
         function_text = function_text.replace("[pass_criteria]", criterias_text)
         function_text = f"testResult = {function_text}"
-        
+        print(function_text)
         return function_text
     
     def SelectFunction(commands:list, criterias:list):
@@ -37,6 +48,9 @@ def set_function(function:str, test_item:str, test_command:list, pass_criteria:l
 
         elif num_of_commands == 1:
             return "CommandCheck_OneByMuti"
+        
+        else:
+            return "CommandCheck_OneByOne"
 
     functions = {
         "CommandCheck_OneByOne" : CommandCheck_OneByOne,
@@ -78,6 +92,8 @@ def set_program(function:str, test_station:str, test_item:str, test_command:list
     return result, test_program
 
 def init(file_name:str):
+    with open(f'./constent/functions.json', 'r') as data_file:
+        functions = json.load(data_file)
     with open(f'./constent/templates.txt', 'r') as data_file:
         template = str(data_file.read())
 
@@ -85,14 +101,15 @@ def init(file_name:str):
         test_items = json.load(data_file)
 
 
-    return template, test_items
+    return functions, template, test_items
 
-def save_programs(test_programs:list, type:str):
+def save_programs(test_programs:list, type:str, file_name:str):
     folder_path = f"./files/{file_name}/"
     function = None
 
     def save_normally(test_programs, file):
-        for _, _, test_program in test_programs:
+        for test_program in test_programs:
+            test_program = test_program.replace("\\n", "\n")
             file.write(test_program)
 
         return file
@@ -130,14 +147,15 @@ def save_programs(test_programs:list, type:str):
 
 def main(file_name:str):
     # init
-    template, test_items = init(file_name=file_name)
+    functions, template, test_items = init(file_name=file_name)
 
     
     test_programs = []
-    for test_station, test_item, test_commands, pass_criterias in test_items:
-        
-        test_program = set_program(
-            function="Command_Check",
+    for datas in test_items:
+        test_station, test_item, test_commands, pass_criterias = datas["test_station"], datas["test_item"], datas["generative_commands"], datas["generative_criterias"]
+        function = functions["CommandCheck"]
+        result, test_program = set_program(
+            function=function,
             test_station=test_station,
             test_item=test_item,
             test_command=test_commands,
@@ -149,5 +167,6 @@ def main(file_name:str):
     
     save_programs(
         test_programs=test_programs,
-        type="NORMAL"
+        type="NORMAL",
+        file_name=file_name
     )
