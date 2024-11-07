@@ -44,6 +44,8 @@ def find_tag(content: BeautifulSoup, tags: list, times):
     datas = []
     for sub in content.find_all(tag_name, recursive=False):
         if sub.get('value') != 'None' and sub.get('value') != '#000000;':
+            if delete_comment(sub):
+                continue
             datas.append(sub)
         else:
             if times != 1:
@@ -92,6 +94,56 @@ def abstract_keyword(content, tags=['highlight', 'color']):
         return content
 
     return str(soup.find('table'))
+
+def delete_comment(text):
+    if text[:2] == "//" and text[-2:]=="//":
+        return True
+    else:
+        return False
+
+
+def pass_comment(content):
+    soup = BeautifulSoup(content, 'lxml')
+    key = True
+
+    # 第一次修改 criteria
+    criteria = soup.find_all('column')[3]
+    tag_permutations = list(itertools.permutations(tags))
+    datas = []
+    
+    for tag in tag_permutations:
+        datas += find_tag(criteria, list(tag), 2)
+
+    if len(datas) != 0:
+        key = False
+        criteria.clear()
+        for data in datas:
+            criteria.append(data)
+            criteria.append(BeautifulSoup('<color value="None">\\n</color>', 'lxml').find('color'))
+    
+    # 打印出修改後的 criteria，檢查是否更新
+    # print("Updated criteria:")
+    # print(criteria)
+
+    # 第二次修改 command
+    command = soup.find_all('column')[2]
+    datas = []
+    
+    for tag in tag_permutations:
+        datas += find_tag(command, list(tag), 2)
+
+    if len(datas) != 0:
+        key = False
+        command.clear()
+        for data in datas:
+            command.append(data)
+            command.append(BeautifulSoup('<color value="None">\\n</color>', 'lxml').find('color'))
+    
+    if key:
+        return content
+
+    return str(soup.find('table'))
+    
 
 # 定义生成响应的函数
 def generate_response(messages, chat_pipeline):

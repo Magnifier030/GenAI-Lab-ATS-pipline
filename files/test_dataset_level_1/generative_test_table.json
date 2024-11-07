@@ -1,0 +1,779 @@
+[
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "check_secureboot_status",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>tpm2util sb -status</color></highlight></column><column><highlight value = None><color value = None>raw: 0x00000009</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>disabled: 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>ignorearistacrt: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>passwdintpm: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>unlockspiflash: 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>enablespiupdate: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>measuredboot: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "tpm2util sb -status"
+        ],
+        "generative_criterias": [
+            "disabled: 1",
+            "unlockspiflash: 1"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Upgrade REL FW",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>eth_init</color></highlight></column><column><highlight value = None><color value = None>eth_init</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>MAC0 addr:c4:14:a2:fb:21:80</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134533.46 [COM3][RECV] EDMA ver 1 hw init</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134535.33 [COM3][RECV] phy firmware read command : mmc read 0xbf1dad40 0x7800 0x800</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>MMC read: dev # 0, block # 30720, count 2048 ... 2048 blocks read: OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Loaded 30 PHY firmware from flash</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134536.10 [COM3][RECV] Using Cisco phy firmware format</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>file image majo,mino,inc,test are 12,1,3,0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Downloading code to PHY RAM, please wait...</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134540.47 [COM3][RECV] Download of code to marvell 3610m RAM complete.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134541.46 [COM3][RECV] Firmware version: 12.1.3.0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134542.67 [COM3][RECV] phy firmware read command : mmc read 0xbf3dad80 0x7800 0x800</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>MMC read: dev # 0, block # 30720, count 2048 ...</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134542.80 [COM3][RECV] 2048 blocks read: OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Using Cisco phy firmware format</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>file image majo,mino,inc,test are 12,1,3,0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Downloading code to PHY RAM, please wait...</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134547.19 [COM3][RECV] Download of code to marvell 3610m RAM complete.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134548.19 [COM3][RECV] Firmware version: 12.1.3.0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134548.30 [COM3][RECV] ipq9574_edma_init success!</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>IPQ9574#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "eth_init"
+        ],
+        "generative_criterias": [
+            "IPQ9574#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "EnableSecureBoot",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#4F81BD;'>./fuse_blower_wnc_pvt.sh</color></highlight></column><column><highlight value = None><color value = '#000000;'>BLOWING HD FUSES WNC....</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>DONE</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>VERIFYING HD FUSES WNC....</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>SUCCESS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>BLOWING ID FUSES....</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>DONE</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>VERIFYING ID FUSES</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>SUCCESS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>LOCKING ALL ID FUSES....</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>-------------------------------------</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>DONE</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>/tmp#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "./fuse_blower_wnc_pvt.sh"
+        ],
+        "generative_criterias": [
+            "DONE",
+            "DONE",
+            "DONE",
+            "/tmp#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Check ART Partition & cal data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>hexdump /dev/caldata</color></highlight></column><column><color value = None><highlight value = None>root@R7AQ-C1:/# hexdump /dev/caldata                                                                                                                              </highlight><highlight value = 'yellow'>0000000 0000 0000 0000 0000 0000 0000 0000 0000</highlight></color><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>*</color></highlight><highlight value = None><color value = None>\n</highlight></color><color value = None><highlight value = 'yellow'>0200000</highlight><highlight value = None>                                                                                                                                                    root@R7AQ-C1:/#</highlight></color></column></row></table>",
+        "generative_commands": [
+            "hexdump /dev/caldata"
+        ],
+        "generative_criterias": [
+            "*",
+            "*",
+            "0000000 0000 0000 0000 0000 0000 0000 0000 0000",
+            "0200000",
+            "*",
+            "0200000",
+            "*"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Unlock Bootloader",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>(command to ATOM PC)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>atom ACT2 SignData --InFile \" + $\"{MAC}_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml > \" + $\"{MAC}_zealand_signdata_output.xml</color></highlight></column><column><highlight value = None><color value = None>0701-135438.78 [172.16.100.100][CMD]  atom ACT2 SignData --InFile C414A2FB2180_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml > C414A2FB2180_zealand_signdata_output.xml</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-135445.77 [172.16.100.100][RECV] atom ACT2 SignData --InFile C414A2FB2180_zea</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>land_inputchallengedata.txt --InFormat txt --OutFormat xml > C414A2FB2180_zealan</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>d_signdata_output.xml</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>]0;C:\\WINDOWS\\system32\\conhost.exe - atom  ACT2 SignData --InFile C414A2FB2180_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml ]0;C:\\WINDOWS\\system32\\conhost.exe</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>meraki@T1-1-1-Q-51774 C:\\Cisco\\ATOM></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-135445.78 [INFO] meraki@T1-1-1-Q-51774 C:\\Cisco\\ATOM>atom ACT2 SignData --InFile C414A2FB2180_zea</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>land_inputchallengedata.txt --InFormat txt --OutFormat xml > C414A2FB2180_zealan</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>d_signdata_output.xml</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>]0;C:\\WINDOWS\\system32\\conhost.exe - atom  ACT2 SignData --InFile C414A2FB2180_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml ]0;C:\\WINDOWS\\system32\\conhost.exe</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>meraki@T1-1-1-Q-51774 C:\\Cisco\\ATOM></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-135445.80 [SUI]   UnlockBootloader SPEC:-1~1 Value:0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-135446.33 [LOG]  Read : </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><?xml version=\"1.0\" encoding=\"utf-8\"?></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><signDataResponse></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><AtomResponseHeader></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><ResponseCode>0</ResponseCode></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><ResponseMessage>SUCCESS</ResponseMessage></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None></AtomResponseHeader></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None><signDataResponseBody></color></highlight><highlight value = None><color value = None>\n</highlight></color><color value = None><highlight value = None><SignatureLen></highlight><highlight value = 'magenta'>256</highlight><highlight value = None></SignatureLen></highlight></color><highlight value = None><color value = None>\n</highlight></color><color value = None><highlight value = None><Signature></highlight><highlight value = 'magenta'>aea18d135ecd1ecf0d606b44fa65e92cd1bc121118b39e72165a8ab1cb2cdd89731c50a25acb622e42ad4c7979b1245dfe30c9378237e0704290d0d5f2e829d4356588f0b3f311372a2edd077af9d2919419e35ae794914a3aa388f15d4bcb9a094c238cd7a58e5737d7b108ceba3bef6d5b9429d8c2cdc038d8fcf74d50b63ce1dd96043829b16e14f476478af5433d5d7f8dbff7430689e569c11a8feb871baee93fb579535aec3af15afaa4ade3ad41aa632eb1a8d442730c62272e847bd05de8638aec87c4031490f11cbdf793bd980a95d657461336fdfdbd46f6db752d2492c70be9fad3d6f722e7a386569a5ef36376bad750dfc4c87c765021fdec3b</highlight><highlight value = None></Signature></highlight></color><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None></signDataResponseBody></color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None></signDataResponse></color></highlight></column></row></table>",
+        "generative_commands": [
+            "atom ACT2 SignData --InFile \" + $\"{MAC}_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml > \" + $\"{MAC}_zealand_signdata_output.xml"
+        ],
+        "generative_criterias": [
+            "256"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Load card",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>rmmod ecm_wifi_plugin</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rmmod monitor</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rmmod wifi_3_0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rmmod qca_ol</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>insmod qca_ol testmode=1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>insmod wifi_3_0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_app -a 192.168.1.254 &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>/etc/init.d/ftm start</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>usr/sbin/ftm -n -c /tmp/ftm.conf &</color></highlight></column><column><highlight value = None><color value = None>root@R7AQ-C1:/# rmmod ecm_wifi_plugin</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rmmod monitor</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rmmod wifi_3_0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rmmod qcmodule is not loaded</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>a_ol</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>inroot@R7AQ-C1:/# rmmod monitor</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>qca_ol testmode=1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>insmod wifi_3_0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_app -a 192.168.1.254 &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>/etc/init.d/ftm start</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>usr/sbin/ftm -n -c /tmp/ftm.conf &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# rmmod wifi_3_0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# rmmod qca_ol</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# insmod qca_ol testmode=1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# insmod wifi_3_0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# diag_socket_app -a 192.168.1.254 &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# /etc/init.d/ftm start</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_log: Diag_LSM_Init succeeded.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_log: Remote device detected, remote_ids: 0x7</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_log: socket_count is: 4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag: In diag_register_socket_cb, registered socket callback function</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_log: Translating address: 192.168.1.254</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_socket_log: Trying to connect to address: 192.168.1.254, port: 2500</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>4096+0 records in</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>4096+0 records out</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>2097152 bytes (2.0MB) copied, 0.012125 seconds, 164.9MB/s</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# usr/sbin/ftm -n -c /tmp/ftm.conf &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# diag_socket_log: Successful connect to address: 192.168.1.254, port number: 2500</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag:diag_switch_logging: kernel supported: NUM_PERIPHERALS = 7, DIAG_CON_ALL: 255</color></highlight><highlight value = None><color value = None>\n</highlight></color><color value = None><highlight value = 'yellow'>logging switched</highlight><highlight value = None> </highlight></color><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>diag_send_socket_data:hdlc: Delimiter found at the middle index 3</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "rmmod ecm_wifi_plugin",
+            "rmmod monitor",
+            "rmmod wifi_3_0",
+            "rmmod qca_ol",
+            "insmod qca_ol testmode=1",
+            "insmod wifi_3_0",
+            "diag_socket_app -a 192.168.1.254 &",
+            "/etc/init.d/ftm start",
+            "usr/sbin/ftm -n -c /tmp/ftm.conf &"
+        ],
+        "generative_criterias": [
+            "logging switched"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Traffic_Test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>test interface all seconds 10 fixed</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Test on port1.0.1 complete</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Test on port1.0.2 complete</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Test on port1.0.3 complete</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Test on port1.0.4 complete</color></highlight></column></row></table>",
+        "generative_commands": [
+            "test interface all seconds 10 fixed"
+        ],
+        "generative_criterias": [
+            "Test on port1.0.1 complete",
+            "Test on port1.0.2 complete",
+            "Test on port1.0.3 complete",
+            "Test on port1.0.4 complete"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Upgrade REL FW",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>setenv ipaddr {dutIP} </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>setenv serverip {pcIP}</color></highlight></column><column><highlight value = None><color value = None>0701-134548.30 [COM3][CMD]  setenv ipaddr 192.168.1.1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134548.42 [COM3][RECV] setenv ipaddr 192.168.1.1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>IPQ9574#</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134548.42 [COM3][CMD]  setenv serverip 192.168.1.186</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-134548.55 [COM3][RECV] setenv serverip 192.168.1.186</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>IPQ9574#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "setenv ipaddr {dutIP} ",
+            "setenv serverip {pcIP}"
+        ],
+        "generative_criterias": [
+            "IPQ9574#",
+            "IPQ9574#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "check_rtc",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>hwclock --show</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Thu Jul  7 22:08:54 2022  0.000000 seconds</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>The DUT RTC deviation should be within the specified deviation:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>[-12 * day] - 6 < [SFCS \u2013 Read RTC] < [+5 * day] + 6</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>The \u201cday\u201d is an integer (unconditional carry)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>(RTC deviation: -12 ~ +5, SW read / write delay: -6 ~ +6)</color></highlight></column></row></table>",
+        "generative_commands": [
+            "hwclock --show"
+        ],
+        "generative_criterias": [
+            "Thu Jul  7 22:08:54 2022  0.000000 seconds"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "CheckSPI_ExtraCert",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>flashrom -l /etc/spi_layout -i extra_cert -r /tmp/extra_cert.save.2</color></highlight></column><column><highlight value = None><color value = None>flashrom v1.1 on Linux 4.19.142.Ar-27731834.rramaak419xgbeport0.1+ (x86_64)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>flashrom is free software, get the source code at https://flashrom.org</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Using region: \"extra_cert\".</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Using default programmer \"internal\" with arguments \"\".</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Using clock_gettime for delay loops (clk_id: 1, resolution: 1ns).</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Found chipset \"AMD FP4\".</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Enabling flash write... OK.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Found Macronix flash chip \"MX25U12835F\" (16384 kB, SPI) mapped at physical address 0xff000000.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Unsetting lock bit(s) failed.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Reading flash... done.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "flashrom -l /etc/spi_layout -i extra_cert -r /tmp/extra_cert.save.2"
+        ],
+        "generative_criterias": [
+            "Unsetting lock bit(s) failed.",
+            "Reading flash... done."
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "check_eMMC_info",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag storage emmc info test</color></highlight></column><column><highlight value = None><color value = None>SKU=X1_24P</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>HwRev=10.04</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Display eMMC chipset infomation:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>========================================================</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>type: 'MMC'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>manufacturer: 'Toshiba' ''</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>product: '008GB0' 0.964109625</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>serial: 0x00000000</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>manfacturing date: 2001 sep</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Max Enhanced Area Size [MAX_ENH_SIZE_MULT]: 0x0003a4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Enhanced User Data Area Size [ENH_SIZE_MULT]: 0x000000</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>========================================================</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>vendor=Toshiba (SPEC: Toshiba,Toshiba)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>product=008GB0 (SPEC: 008GB0,008GB1)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>max_enh_size=0x0003a4 (SPEC: 0x0003a4,0x0003a4)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>enh_size=0x000000 (SPEC: 0x000000,0x000000)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag storage emmc info test"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Remove i/o expander driver reload script",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>sed -i 's/\\/etc\\/i2c_kmodule\\/insert_i2c_kmodule.sh/#\\/etc\\/i2c_kmodule\\/insert_i2c_kmodule.sh/g' /usr/sbin/wncgps</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>sync; sync;</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>cat /usr/sbin/wncgps | grep \"#/etc/i2c_kmodule/insert_i2c_kmodule.sh\"</color></highlight></column><column><highlight value = None><color value = None>root@R7AQ-C1:/# sed -i 's/\\/etc\\/i2c_kmodule\\/insert_i2c_kmodule.sh/#\\/etc\\/i2c_kmodule\\/insert_i2c_kmodule.sh/g' /usr/sbin/wncgps</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# sync; sync;</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@R7AQ-C1:/# cat /usr/sbin/wncgps | grep \"#/etc/i2c_kmodule/insert_i2c_kmodule.sh\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>#/etc/i2c_kmodule/insert_i2c_kmodule.sh > /dev/null 2>&1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>#/etc/i2c_kmodule/insert_i2c_kmodule.sh > /dev/null 2>&1</color></highlight></column></row></table>",
+        "generative_commands": [
+            "sed -i 's/\\/etc\\/i2c_kmodule\\/insert_i2c_kmodule.sh/#\\/etc\\/i2c_kmodule\\/insert_i2c_kmodule.sh/g' /usr/sbin/wncgps",
+            "sync; sync;",
+            "cat /usr/sbin/wncgps | grep \"#/etc/i2c_kmodule/insert_i2c_kmodule.sh\""
+        ],
+        "generative_criterias": [
+            "#/etc/i2c_kmodule/insert_i2c_kmodule.sh > /dev/null 2>&1",
+            "#/etc/i2c_kmodule/insert_i2c_kmodule.sh > /dev/null 2>&1"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "VerifySecurityConfig",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>securebootctl mfg \u2013display</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Secure Boot: enabled</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Password default storage: flash</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>16:00:00:00:03:7C:02:7D:2C:8A:AB:97:4C:00:00:00:00:00:03</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>28:00:00:00:11:3B:51:91:32:5F:E7:5A:5E:00:00:00:00:00:11</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Arista certificate 3: No certificate is configured</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>28:00:00:00:10:3F:BA:D4:42:9C:84:ED:09:00:00:00:00:00:10</color></highlight></column></row></table>",
+        "generative_commands": [
+            "securebootctl mfg \u2013display"
+        ],
+        "generative_criterias": [
+            "Secure Boot: enabled",
+            "Password default storage: flash",
+            "16:00:00:00:03:7C:02:7D:2C:8A:AB:97:4C:00:00:00:00:00:03",
+            "28:00:00:00:11:3B:51:91:32:5F:E7:5A:5E:00:00:00:00:00:11",
+            "Arista certificate 3: No certificate is configured",
+            "28:00:00:00:10:3F:BA:D4:42:9C:84:ED:09:00:00:00:00:00:10"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-RF station",
+        "test_item": "Unlock Bootloader",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>(command to DUT)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'magenta'><color value = None>3074</color></highlight></column><column><highlight value = None><color value = None>0701-135434.33 [COM3][CMD]  3074</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>0701-135434.47 [COM3][RECV] 3074</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Certificate Chain Length: 3074</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'yellow'><color value = None>Enter Cert Chain data:</color></highlight></column></row></table>",
+        "generative_commands": [
+            "3074"
+        ],
+        "generative_criterias": [
+            "Enter Cert Chain data:"
+        ]
+    },
+    {
+        "test_station": "Test Items Command- FQC station",
+        "test_item": "RemoveDUTNetwork",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>MR_CCT.exe -r \u201cSN\u201d</color></highlight></column><column><color value = None><highlight value = None>D:\\Projects\\Meraki\\CM66-VE\\Other\\MR_CCT></highlight><highlight value = 'yellow'>MR_CCT.exe -r Q5AF-GRFA-ZPDZ</highlight></color><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*********************************************************</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*       Copyright (c) 2022, Cisco Systems, Inc.         *</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*             For use by WNC Taiwan ONLY                *</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*                Company Confidential                   *</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*********************************************************</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Cisco Meraki Cloud Connectivity Test</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Version 1.0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Removing Device with Serial Q5AF-GRFA-ZPDZ from the CCT Network...</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Q5AF-GRFA-ZPDZ has been removed</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = 'green'><color value = None>[SUCCESS] DUT is not in the CCT Network</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>D:\\Projects\\Meraki\\CM66-VE\\Other\\MR_CCT> </color></highlight></column></row></table>",
+        "generative_commands": [
+            "MR_CCT.exe -r \u201cSN\u201d"
+        ],
+        "generative_criterias": [
+            "[SUCCESS] DUT is not in the CCT Network",
+            "MR_CCT.exe -r Q5AF-GRFA-ZPDZ"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "I2C Bus Check",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>i2cdetect -r -y 6</color></highlight></column><column><color value = '#000000;'><highlight value = None>root@R7AQ-C1:/# i2cdetect -r -y 6     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f00:          -- -- -- -- -- -- -- -- -- -- -- -- --10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</highlight><highlight value = 'yellow'>20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- UU --</highlight><highlight value = None>30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --40: 40 41 -- -- -- -- -- -- -- -- -- -- -- -- -- --50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --70: -- UU -- -- -- -- -- --root@R7AQ-C1:/#</highlight></color></column></row></table>",
+        "generative_commands": [
+            "i2cdetect -r -y 6"
+        ],
+        "generative_criterias": [
+            "20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- UU --"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Check board information",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>rm -f /tmp/devinfo.tmp </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>devinfo_access show</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>ifconfig | grep eth0 | cut -d ' ' -f 11</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>hexdump -C /dev/mtd4 -s 0x4 -n 6 | cut -c 11-27</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>hexdump -C /dev/mtd4 -s 0xa -n 6 | cut -c 11-27</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>hexdump -C /dev/mtd4 -s 0x5004 -n 6 | cut -c 11-27</color></highlight></column><column><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>SKU=</color><color value = '#FF0000;'>VAT-02-000</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Serial_Number=</color><color value = '#FF0000;'>1222146000066</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>HW_Rev=</color><color value = '#FF0000;'>3.0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>SW_Rev=</color><color value = '#FF0000;'>3.21.12.DVT-RC.4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84:EB:3E:24:19:4E</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84 eb 3e 24 19 4f</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84 eb 3e 24 19 50</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84 eb 3e 24 19 51</color></highlight></column></row></table>",
+        "generative_commands": [
+            "rm -f /tmp/devinfo.tmp",
+            "devinfo_access show",
+            "ifconfig | grep eth0 | cut -d ' ' -f 11",
+            "hexdump -C /dev/mtd4 -s 0x4 -n 6 | cut -c 11-27",
+            "hexdump -C /dev/mtd4 -s 0xa -n 6 | cut -c 11-27",
+            "hexdump -C /dev/mtd4 -s 0x5004 -n 6 | cut -c 11-27"
+        ],
+        "generative_criterias": [
+            "VAT-02-000",
+            "1222146000066",
+            "3.0",
+            "3.21.12.DVT-RC.4",
+            "84:EB:3E:24:19:4E",
+            "84 eb 3e 24 19 4f",
+            "84 eb 3e 24 19 50",
+            "84 eb 3e 24 19 51"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Upgrade to production FW",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cd /tmp</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin</color></highlight></column><column><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>53577a59d53742a4321d852aad2c0c83</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cd /tmp",
+            "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100",
+            "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr",
+            "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin",
+            "cd /tmp",
+            "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100",
+            "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr",
+            "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin",
+            "cd /tmp",
+            "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100",
+            "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr",
+            "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin"
+        ],
+        "generative_criterias": [
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83",
+            "53577a59d53742a4321d852aad2c0c83"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Check board information after upgrading to production FW",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>devinfo_access show</color></highlight></column><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>SKU=</color><color value = '#FF0000;'>VAT-02-000</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Serial_Number=</color><color value = '#FF0000;'>1222146000246</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>HW_Rev=</color><color value = '#FF0000;'>3.0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>SW_Rev=</color><color value = '#FF0000;'>3.21.12.DVT-RC.4</color></highlight></column></row></table>",
+        "generative_commands": [
+            "devinfo_access show"
+        ],
+        "generative_criterias": [
+            "VAT-02-000",
+            "1222146000246",
+            "3.0",
+            "3.21.12.DVT-RC.4"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Check Ethernet and wifi MAC address",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>ifconfig eth0 | grep \"HWaddr\" | cut -c 39-55</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>iw wlan1 info | grep addr | cut -c 7-23</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>iw wlan0 info | grep addr | cut -c 7-23</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>iw wlan2 info | grep addr | cut -c 7-23</color></highlight></column><column><highlight value = None><color value = '#000000;'>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84:EB:3E:24:19:4E</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84:eb:3e:24:19:4f</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84:eb:3e:24:19:50 </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>84:eb:3e:24:19:51</color></highlight></column></row></table>",
+        "generative_commands": [
+            "ifconfig eth0 | grep \"HWaddr\" | cut -c 39-55",
+            "iw wlan1 info | grep addr | cut -c 7-23",
+            "iw wlan0 info | grep addr | cut -c 7-23",
+            "iw wlan2 info | grep addr | cut -c 7-23"
+        ],
+        "generative_criterias": [
+            "84:EB:3E:24:19:4E",
+            "84:eb:3e:24:19:4f",
+            "84:eb:3e:24:19:50",
+            "84:eb:3e:24:19:51"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Check BT MAC address",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>uart_launcher -c 921600 -p /dev/ttyS2 -s &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>btservice&</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>btmw-rpc-test</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Ctrl+z</color></highlight></column><column><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>ps_dev_info.bdAddr:    </color><color value = '#FF0000;'>84:EB:3E:24:19:52</color></highlight></column></row></table>",
+        "generative_commands": [
+            "uart_launcher -c 921600 -p /dev/ttyS2 -s &",
+            "btservice&",
+            "btmw-rpc-test",
+            "Ctrl+z"
+        ],
+        "generative_criterias": [
+            "84:EB:3E:24:19:52"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "DDR",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>memtester 1 1</color></highlight></column><column><highlight value = None><color value = None>Compare XOR         : </color><color value = '#FF0000;'>ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Compare SUB         : </color><color value = '#FF0000;'>ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Compare MUL         : </color><color value = '#FF0000;'>ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Compare DIV         : </color><color value = '#FF0000;'>ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Compare OR          : </color><color value = '#FF0000;'>ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Compare AND         : </color><color value = '#FF0000;'>ok</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Sequential Increment   : </color><color value = '#FF0000;'>ok</color></highlight></column></row></table>",
+        "generative_commands": [
+            "memtester 1 1"
+        ],
+        "generative_criterias": [
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok",
+            "ok"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "THERM_BAT Thermal",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /sys/devices/platform/soc@0/soc@0:bus@30800000/30a30000.i2c/i2c-1/1-0034/voltages/v_therm_batt</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /sys/devices/platform/soc@0/soc@0:bus@30800000/30a30000.i2c/i2c-1/1-0034/voltages/v_therm1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /sys/devices/platform/soc@0/soc@0:bus@30800000/30a30000.i2c/i2c-1/1-0034/voltages/v_therm2</color></highlight></column><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Passed if returned value in the 5th column is</color><color value = '#FF0000;'> 500 ~ 650</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Passed if returned value in the 5th column is</color><color value = '#FF0000;'> 1100 ~ 1600</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Passed if returned value in the 5th column is</color><color value = '#FF0000;'> 1100 ~ 1600</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cat /sys/devices/platform/soc@0/soc@0:bus@30800000/30a30000.i2c/i2c-1/1-0034/voltages/v_therm_batt",
+            "cat /sys/devices/platform/soc@0/soc@0:bus@30800000/30a30000.i2c/i2c-1/1-0034/voltages/v_therm1",
+            "cat /sys/devices/platform/soc@0/soc@0:bus@30800000/30a30000.i2c/i2c-1/1-0034/voltages/v_therm2"
+        ],
+        "generative_criterias": [
+            "500 ~ 650",
+            "1100 ~ 1600",
+            "1100 ~ 1600"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "DECT interface check",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cmbs_tcx -comname ttymxc0 -baud 921600 </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>q</color></highlight></column><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#############################################################</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#       Version:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#       Application     : </color><color value = '#FF0000;'>Version 4.13.2 - Build 8 - RC 18</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#       Target          : </color><color value = '#FF0000;'>Version 4.13.2 - Build 8 - RC 18</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#       Registration Window CLOSED</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>#############################################################</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cmbs_tcx -comname ttymxc0 -baud 921600",
+            "q"
+        ],
+        "generative_criterias": [
+            "Version 4.13.2 - Build 8 - RC 18",
+            "Version 4.13.2 - Build 8 - RC 18"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Speaker and Mic loopback test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>panel-audio-test -m -v -E1</color></highlight></column><column><highlight value = None><color value = None>test_mics 2345: Testing Mic 1 Gallus or Nene</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>pulseaudio play_frames_per_period 256</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2665: Mic data sent. Wait for analysis.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>fundamental (bin 177 of 1024) frequency  1383:  -21.644 dB, THD(f)     0.30%</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>response is</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Issuing cmd dx-socket-cli /tmp/dx-host-sock -a \"tc1 2\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>response is</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>arecord: no process found</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2345: Testing Mic 2 Gallus or Nene</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>pulseaudio play_frames_per_period 256</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2665: Mic data sent. Wait for analysis.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>fundamental (bin 177 of 1024) frequency  1383:  -11.684 dB, THD(f)     0.60%</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>main 3588:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>panel-audio-test microphone test success. Both microphones ok.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>12399 ms elapsed for entire test</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*******  panel-audio-test analysis is acceptable *******</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 1 db value:</color><color value = '#FF0000;'> -9~ -4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 1 THD value:</color><color value = '#FF0000;'> 0 ~ 50</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 2 db value:</color><color value = '#FF0000;'> -11~ -4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 2 THD value:</color><color value = '#FF0000;'> 0~ 50</color></highlight></column></row></table>",
+        "generative_commands": [
+            "panel-audio-test -m -v -E1"
+        ],
+        "generative_criterias": [
+            "fundamental (bin 177 of 1024) frequency  1383:  -21.644 dB, THD(f)     0.30%",
+            "fundamental (bin 177 of 1024) frequency  1383:  -11.684 dB, THD(f)     0.60%",
+            "-9~ -4",
+            "0 ~ 50",
+            "-11~ -4",
+            "0~ 50"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "PIEZO Output Voltage",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>echo 14 > /sys/class/gpio/export; echo out > /sys/class/gpio/gpio14/direction; echo 1 > /sys/class/gpio/gpio14/value</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>killall dx-host; /usr/bin/dx-host socket > /dev/null &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 10</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>dx-socket-cli /tmp/dx-host-sock -a \"uc0\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>dx-socket-cli /tmp/dx-host-sock -a \"tc1 1\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 7:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>tonegen -z -t0 -d 2 &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 8:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>arecord -D plughw:CARD=dspgDual,DEV=1 -r 16000 -f S16_LE -d2 -c 2 piezo.wav</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 9:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>ffmpeg -i piezo.wav -af \"volumedetect\" -f null /dev/null</color></highlight></column><column><highlight value = None><color value = None>video:0kB audio:125kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>[Parsed_volumedetect_0 @ 0xaaaac56e5c20] n_samples: 64000</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>[Parsed_volumedetect_0 @ 0xaaaad15d0c20] </color><color value = '#FF0000;'>mean_volume: -7.8 dB</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>[Parsed_volumedetect_0 @ 0xaaaad15d0c20] </color><color value = '#FF0000;'>max_volume: 0.0 dB</color><color value = None> </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>[Parsed_volumedetect_0 @ 0xaaaac56e5c20] histogram_2db: 3774</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@imx8mm-magellan:~#</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>mean_volume:</color><color value = '#FF0000;'> -10 ~ -3</color><color value = None>  </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>max_volume: </color><color value = '#FF0000;'>-3 ~ 3</color></highlight></column></row></table>",
+        "generative_commands": [
+            "echo 14 > /sys/class/gpio/export; echo out > /sys/class/gpio/gpio14/direction; echo 1 > /sys/class/gpio/gpio14/value",
+            "killall dx-host; /usr/bin/dx-host socket > /dev/null &",
+            "sleep 10",
+            "dx-socket-cli /tmp/dx-host-sock -a \"uc0\"",
+            "dx-socket-cli /tmp/dx-host-sock -a \"tc1 1\"",
+            "sleep 1",
+            "tonegen -z -t0 -d 2 &",
+            "arecord -D plughw:CARD=dspgDual,DEV=1 -r 16000 -f S16_LE -d2 -c 2 piezo.wav",
+            "ffmpeg -i piezo.wav -af \"volumedetect\" -f null /dev/null"
+        ],
+        "generative_criterias": [
+            "mean_volume: -7.8 dB",
+            "max_volume: 0.0 dB",
+            "-10 ~ -3",
+            "-3 ~ 3"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "LTE status test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>miniterm.py /dev/ttyUSB3 115200</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>AT+QGMR</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>AT+CGSN</color></highlight></column><column><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>EG91NAXGAR07A03M1G_01.002.01.002</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Returned value is</color><color value = '#FF0000;'> 15-digit</color></highlight></column></row></table>",
+        "generative_commands": [
+            "miniterm.py /dev/ttyUSB3 115200",
+            "AT+QGMR",
+            "AT+CGSN"
+        ],
+        "generative_criterias": [
+            "EG91NAXGAR07A03M1G_01.002.01.002",
+            "15-digit"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "SIM 1 test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>while [ ! -e /dev/ttyUSB3 ]; do echo \"waiting LTE ...\"; sleep 1; done; sleep 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>miniterm.py /dev/ttyUSB3 115200</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>        at+qdsim?</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>if (at+qdsim? is 1)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>at+qdsim=0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>quit miniterm.py</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>echo 0 > /sys/class/cell/cell0/enable; sleep 0.5; echo 1 > /sys/class/cell/cell0/enable</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>while [ ! -e /dev/ttyUSB3 ]; do echo \"waiting LTE ...\"; sleep 5; done; sleep 10</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>miniterm.py /dev/ttyUSB3 115200</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>at+qdsim?</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>AT+ICCID </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>AT+CIMI </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 7:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>at+qdsim=1</color></highlight></column><column><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>+QDSIM: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>20-digit number </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>15-digit number</color></highlight></column></row></table>",
+        "generative_commands": [
+            "while [ ! -e /dev/ttyUSB3 ]; do echo \"waiting LTE ...\"; sleep 1; done; sleep 1",
+            "miniterm.py /dev/ttyUSB3 115200",
+            "       at+qdsim?",
+            "if (at+qdsim? is 1)",
+            "at+qdsim=0",
+            "quit miniterm.py",
+            "echo 0 > /sys/class/cell/cell0/enable; sleep 0.5; echo 1 > /sys/class/cell/cell0/enable",
+            "while [ ! -e /dev/ttyUSB3 ]; do echo \"waiting LTE ...\"; sleep 5; done; sleep 10",
+            "miniterm.py /dev/ttyUSB3 115200",
+            "at+qdsim?",
+            "AT+ICCID",
+            "AT+CIMI",
+            "at+qdsim=1"
+        ],
+        "generative_criterias": [
+            "+QDSIM: 0",
+            "20-digit number",
+            "15-digit number"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "SIM 2 test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 35</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>miniterm.py /dev/ttyUSB4 115200</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>at+qdsim?</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>AT+ICCID </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>AT+CIMI </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>at+qdsim=0</color></highlight></column><column><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>+QDSIM: 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>20-digit number </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>15-digit number</color></highlight></column></row></table>",
+        "generative_commands": [
+            "sleep 35",
+            "miniterm.py /dev/ttyUSB4 115200",
+            "at+qdsim?",
+            "AT+ICCID",
+            "AT+CIMI",
+            "at+qdsim=0"
+        ],
+        "generative_criterias": [
+            "+QDSIM: 1",
+            "20-digit number",
+            "15-digit number"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Write SKU number",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>skunumset; umount /media/bootscript; mount /media/bootscript</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>VS-SHP000-001</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /media/bootscript/sku.txt</color></highlight></column><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>skunumset: boardcheck succeeded</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>skunumset: Done setting SKU</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>VS-SHP000-001</color></highlight></column></row></table>",
+        "generative_commands": [
+            "skunumset; umount /media/bootscript; mount /media/bootscript",
+            "VS-SHP000-001",
+            "cat /media/bootscript/sku.txt"
+        ],
+        "generative_criterias": [
+            "skunumset: boardcheck succeeded",
+            "skunumset: Done setting SKU",
+            "VS-SHP000-001"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "G sensor test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>grep -r \"\" /sys/bus/iio/devices/iio:device0/in*raw</color></highlight></column><column><highlight value = None><color value = None>/sys/bus/iio/devices/iio:device0/</color><color value = '#FF0000;'>in_accel_x_raw:108</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>/sys/bus/iio/devices/iio:device0/</color><color value = '#FF0000;'>in_accel_y_raw:-32</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>/sys/bus/iio/devices/iio:device0/</color><color value = '#FF0000;'>in_accel_z_raw: 1040</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>-100 < x < 100</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>-100 < y < 100</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>-1200 < z < -800</color></highlight></column></row></table>",
+        "generative_commands": [
+            "grep -r \"\" /sys/bus/iio/devices/iio:device0/in*raw"
+        ],
+        "generative_criterias": [
+            "in_accel_x_raw:108",
+            "in_accel_y_raw:-32",
+            "in_accel_z_raw: 1040"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "I2C device check",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>i2cdetect -r -y 0 | grep -o UU | wc -l </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>i2cdetect -r -y 1 | grep -o UU | wc -l</color><color value = None> </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>i2cdetect -r -y 2 | grep -o UU | wc \u2013l</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>i2cdetect -r -y 3 | grep -o UU | wc -l</color></highlight></column><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>2</color></highlight></column></row></table>",
+        "generative_commands": [
+            "i2cdetect -r -y 0 | grep -o UU | wc -l",
+            "i2cdetect -r -y 1 | grep -o UU | wc -l",
+            "i2cdetect -r -y 2 | grep -o UU | wc \u2013l",
+            "i2cdetect -r -y 3 | grep -o UU | wc -l"
+        ],
+        "generative_criterias": [
+            "1",
+            "2",
+            "2",
+            "2"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Speaker and Microphone Test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cmbs_tcx -comname ttymxc0 -baud 921600</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>s</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>S</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Enter</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 7:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>q</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 8:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>q</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 9:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 1;echo 0 > /sys/class/gpio/gpio52/value;sleep 0.5;echo 1 > /sys/class/gpio/gpio52/value;sleep 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 10:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cmbs_tcx -comname ttymxc0 -baud 921600</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 10:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>s</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 11:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 12:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>S</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 13:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>q</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 14:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>q</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 15:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>q</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 16:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>killall dx-host; /usr/bin/dx-host socket > /dev/null &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 17:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 10</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 18:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>panel-audio-test -m -v -E1 -V 5</color></highlight></column><column><highlight value = None><color value = None>Command 18:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2345: Testing Mic 1 Gallus or Nene</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>pulseaudio play_frames_per_period 256</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2665: Mic data sent. Wait for analysis.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>fundamental (bin 177 of 1024) frequency  1383:  -21.644 dB, THD(f)     0.30%</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>response is</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Issuing cmd dx-socket-cli /tmp/dx-host-sock -a \"tc1 2\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>response is</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>arecord: no process found</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2345: Testing Mic 2 Gallus or Nene</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>pulseaudio play_frames_per_period 256</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>test_mics 2665: Mic data sent. Wait for analysis.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>fundamental (bin 177 of 1024) frequency  1383:  -11.684 dB, THD(f)     0.60%</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>main 3588:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>panel-audio-test microphone test success. Both microphones ok.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>12399 ms elapsed for entire test</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>*******  panel-audio-test analysis is acceptable *******</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 1 db value:</color><color value = '#FF0000;'> -12 ~ -4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 1 THD value:</color><color value = '#FF0000;'> 0 ~ 20</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 2 db value:</color><color value = '#FF0000;'> -10 ~ -2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 2 THD value:</color><color value = '#FF0000;'> 15 ~ 35</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cmbs_tcx -comname ttymxc0 -baud 921600",
+            "s",
+            "2",
+            "S",
+            "0",
+            "Enter",
+            "q",
+            "q",
+            "sleep 1;echo 0 > /sys/class/gpio/gpio52/value;sleep 0.5;echo 1 > /sys/class/gpio/gpio52/value;sleep 1",
+            "cmbs_tcx -comname ttymxc0 -baud 921600",
+            "s",
+            "1",
+            "S",
+            "q",
+            "q",
+            "q",
+            "killall dx-host; /usr/bin/dx-host socket > /dev/null &",
+            "sleep 10",
+            "panel-audio-test -m -v -E1 -V 5"
+        ],
+        "generative_criterias": [
+            "fundamental (bin 177 of 1024) frequency  1383:  -21.644 dB, THD(f)     0.30%",
+            "fundamental (bin 177 of 1024) frequency  1383:  -11.684 dB, THD(f)     0.60%",
+            "-12 ~ -4",
+            "0 ~ 20",
+            "-10 ~ -2",
+            "15 ~ 35"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "PIEZO Alarm Test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cd /tmp; tar xvf /usr/sbin/ffmpeg.tar > /dev/null; cp ffmpeg/ffmpeg /usr/sbin/; cp ffmpeg/lib/* /usr/lib; sync; cd</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>killall dx-host; /usr/bin/dx-host socket > /dev/null &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 10</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>dx-socket-cli /tmp/dx-host-sock -a \"uc0\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>dx-socket-cli /tmp/dx-host-sock -a \"tc1 2\"</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>sleep 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 7:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>tonegen -z -t0 -d 2 &</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 8:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>arecord -D plughw:CARD=dspgDual,DEV=1 -r 16000 -f S16_LE -d2 -c 2 piezo.wav</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 9:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>ffmpeg -i piezo.wav -af \"volumedetect\" -f null /dev/null</color></highlight></column><column><highlight value = None><color value = '#000000;'>video:0kB audio:125kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] n_samples: 64000</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] </color><color value = '#FF0000;'>mean_volume: -4.0 dB</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] </color><color value = '#FF0000;'>max_volume: 0.0 dB</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] histogram_24db: 4</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] histogram_25db: 10</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] histogram_26db: 17</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] histogram_27db: 15</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>[Parsed_volumedetect_0 @ 0xaaaafed5bc20] histogram_28db: 21</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>r</color><color value = None>oot@imx8mn-nene:~#</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>mean_volume:</color><color value = '#FF0000;'> -6 ~ 0</color><color value = None> dB</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>max_volume: </color><color value = '#FF0000;'>-6 ~ 0</color><color value = None> dB</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cd /tmp; tar xvf /usr/sbin/ffmpeg.tar > /dev/null; cp ffmpeg/ffmpeg /usr/sbin/; cp ffmpeg/lib/* /usr/lib; sync; cd",
+            "killall dx-host; /usr/bin/dx-host socket > /dev/null &",
+            "sleep 10",
+            "dx-socket-cli /tmp/dx-host-sock -a \"uc0\"",
+            "dx-socket-cli /tmp/dx-host-sock -a \"tc1 2\"",
+            "sleep 1",
+            "tonegen -z -t0 -d 2 &",
+            "arecord -D plughw:CARD=dspgDual,DEV=1 -r 16000 -f S16_LE -d2 -c 2 piezo.wav",
+            "ffmpeg -i piezo.wav -af \"volumedetect\" -f null /dev/null"
+        ],
+        "generative_criterias": [
+            "mean_volume: -4.0 dB",
+            "max_volume: 0.0 dB",
+            "-6 ~ 0",
+            "-6 ~ 0"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Verify BT MAC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>modprobe btmtk_usb</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>boots -c raddr</color></highlight></column><column><highlight value = None><color value = None>[boots] User(7) <-> Socket(4) <-> server</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>[boots_osi] Command: pidof boots_srv > /dev/null</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>          CMD: 09 10 00</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>        Event: 0E 0A 01 09 10 00 AC 99 23 3E EB 84 (Read BDADD: 0x </color><color value = '#FF0000;'>84-EB-3E-23-99-AC</color><color value = None>)</color></highlight></column></row></table>",
+        "generative_commands": [
+            "modprobe btmtk_usb",
+            "boots -c raddr"
+        ],
+        "generative_criterias": [
+            "84-EB-3E-23-99-AC"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Backup WiFi Calibration Data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cp /lib/firmware/EEPROM_MT7663.bin /media/bootscript;sync</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>md5sum /media/bootscript/EEPROM_MT7663.bin && echo PASS || echo NG</color></highlight></column><column><highlight value = None><color value = None>Get \u201c</color><color value = '#FF0000;'>PASS</color><color value = None>\u201d response</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cp /lib/firmware/EEPROM_MT7663.bin /media/bootscript;sync",
+            "md5sum /media/bootscript/EEPROM_MT7663.bin && echo PASS || echo NG"
+        ],
+        "generative_criterias": [
+            "PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Verify EMMC partitions",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>mount | grep mmcblk2p4 | wc -l</color></highlight></column><column><highlight value = None><color value = None>Verify returned value is \"</color><color value = '#FF0000;'>1</color><color value = None>\" to indicate the partition exists</color></highlight></column></row></table>",
+        "generative_commands": [
+            "mount | grep mmcblk2p4 | wc -l"
+        ],
+        "generative_criterias": [
+            "1"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "G sensor test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>grep -r \"\" /sys/bus/iio/devices/iio:device0/in*raw</color></highlight></column><column><highlight value = None><color value = None>sys/bus/iio/devices/iio:device0/</color><color value = '#FF0000;'>in_accel_x_raw:108</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>/sys/bus/iio/devices/iio:device0/</color><color value = '#FF0000;'>in_accel_y_raw:-32</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>/sys/bus/iio/devices/iio:device0/</color><color value = '#FF0000;'>in_accel_z_raw:-1040</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>root@imx8mn-nene:~#</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>x:</color><color value = '#FF0000;'> -100 ~ 100</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>y: </color><color value = '#FF0000;'>-1200 ~ -900</color><color value = None> </color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>z: </color><color value = '#FF0000;'>-100 ~ 100</color></highlight></column></row></table>",
+        "generative_commands": [
+            "grep -r \"\" /sys/bus/iio/devices/iio:device0/in*raw"
+        ],
+        "generative_criterias": [
+            "in_accel_x_raw:108",
+            "in_accel_y_raw:-32",
+            "in_accel_z_raw:-1040",
+            "-100 ~ 100",
+            "-1200 ~ -900",
+            "-100 ~ 100"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Check FW version",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /etc/version</color></highlight></column><column><highlight value = None><color value = None>Get \u201c</color><color value = '#FF0000;'>20210118091636</color><color value = None>\u201d response</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cat /etc/version"
+        ],
+        "generative_criterias": [
+            "20210118091636"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Check HW version",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /sys/fsl_otp/HW_OCOTP_GP10</color></highlight></column><column><highlight value = None><color value = None>Get \u201c</color><color value = '#FF0000;'>0x3</color><color value = None>\u201d response</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cat /sys/fsl_otp/HW_OCOTP_GP10"
+        ],
+        "generative_criterias": [
+            "0x3"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "ADC test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Cat /sys/bus/iio/devices/iio\\:device3/in_voltage0_raw</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Cat /sys/bus/iio/devices/iio\\:device3/in_voltage1_raw</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Cat /sys/bus/iio/devices/iio\\:device3/in_voltage2_raw</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Cat /sys/bus/iio/devices/iio\\:device3/in_voltage3_raw</color></highlight></column><column><highlight value = None><color value = '#000000;'>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Read value:</color><color value = '#0000FF;'> </color><color value = '#FF0000;'>3900 +/- 50</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Read value:</color><color value = '#0000FF;'> </color><color value = '#FF0000;'>3900 +/- 50</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Read value:</color><color value = '#0000FF;'> </color><color value = '#FF0000;'>2700 +/- 200</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Read value:</color><color value = '#0000FF;'> </color><color value = '#FF0000;'>1650 +/- 200</color></highlight></column></row></table>",
+        "generative_commands": [
+            "Cat /sys/bus/iio/devices/iio\\:device3/in_voltage0_raw",
+            "Cat /sys/bus/iio/devices/iio\\:device3/in_voltage1_raw",
+            "Cat /sys/bus/iio/devices/iio\\:device3/in_voltage2_raw",
+            "Cat /sys/bus/iio/devices/iio\\:device3/in_voltage3_raw"
+        ],
+        "generative_criterias": [
+            "3900 +/- 50",
+            "3900 +/- 50",
+            "2700 +/- 200",
+            "1650 +/- 200"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Speaker/Mic loopback test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>python3 /usr/bin/cmnd_python3x.py</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>ttymxc2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>b</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>b</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>a</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 7:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 8:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>a</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 9:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>r</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 10:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>Ctrl+z</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 10:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>dx-host</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 11:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>ver</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 12:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>panel-audio-test -m -v -E1 -V5</color></highlight></column><column><highlight value = None><color value = None>Command 11:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Check the D2 fw_version and D8 fw_version.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>D2 fw_version=461.7</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>D8 fw_version=465.1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 12:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Need to meet all conditions below.</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Keywords:</color><color value = '#0000FF;'> </color><color value = '#FF0000;'>panel-audio-test analysis is acceptable</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 1 THD value: </color><color value = '#FF0000;'>< 20</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Testing Mic 2 THD value: </color><color value = '#FF0000;'>< 20</color></highlight></column></row></table>",
+        "generative_commands": [
+            "python3 /usr/bin/cmnd_python3x.py",
+            "ttymxc2",
+            "b",
+            "b",
+            "a",
+            "2",
+            "0",
+            "a",
+            "r",
+            "Ctrl+z",
+            "dx-host",
+            "ver",
+            "panel-audio-test -m -v -E1 -V5"
+        ],
+        "generative_criterias": [
+            "D2 fw_version=461.7",
+            "D8 fw_version=465.1",
+            "panel-audio-test analysis is acceptable",
+            "< 20",
+            "< 20"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "BT interface check",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>modprobe btmtk_usb</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>dmesg | grep \"usb registration success\"</color></highlight></column><column><highlight value = None><color value = None>Get \u201c</color><color value = '#FF0000;'>btmtk_usb_init: usb registration success.</color><color value = None>\u201d response.</color></highlight></column></row></table>",
+        "generative_commands": [
+            "modprobe btmtk_usb",
+            "dmesg | grep \"usb registration success\""
+        ],
+        "generative_criterias": [
+            "btmtk_usb_init: usb registration success."
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "eSIM Test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+QUIMSLOT=2'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 2:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+QUIMSLOT?'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 3:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CFUN=1'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 4:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CFUN?'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CSIM=10,\"0070000001\"'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 6:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport \u2013agc 'AT+CSIM=44,\"01A4040010A0000005591010FFFFFFFF890000010000\"'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 7:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CSIM=10,\"01C0000074\"'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 8:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CSIM=24,\"81E2910006BF3E035C015A00\"'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 9:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CSIM=10,\"01C0000015\"'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 10:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+CSIM=10,\"0070800100\"'</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Command 11:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>test_comport -agc 'AT+QUIMSLOT=1'</color></highlight></column><column><highlight value = None><color value = '#000000;'>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>AT+QUIMSLOT=2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#000000;'>Command 5:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>46-digit </color><color value = None>CIMI </color></highlight></column></row></table>",
+        "generative_commands": [
+            "test_comport -agc 'AT+QUIMSLOT=2'",
+            "test_comport -agc 'AT+QUIMSLOT?'",
+            "test_comport -agc 'AT+CFUN=1'",
+            "test_comport -agc 'AT+CFUN?'",
+            "test_comport -agc 'AT+CSIM=10,\"0070000001\"'",
+            "test_comport \u2013agc 'AT+CSIM=44,\"01A4040010A0000005591010FFFFFFFF890000010000\"'",
+            "test_comport -agc 'AT+CSIM=10,\"01C0000074\"'",
+            "test_comport -agc 'AT+CSIM=24,\"81E2910006BF3E035C015A00\"'",
+            "test_comport -agc 'AT+CSIM=10,\"01C0000015\"'",
+            "test_comport -agc 'AT+CSIM=10,\"0070800100\"'",
+            "test_comport -agc 'AT+QUIMSLOT=1'"
+        ],
+        "generative_criterias": [
+            "AT+QUIMSLOT=2",
+            "46-digit"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "Verify Ethernet MAC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Command 1:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0000FF;'>cat /factory/eth_mac</color></highlight></column><column><highlight value = None><color value = None>The MAC is the same as what we set in BFT station.</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cat /factory/eth_mac"
+        ],
+        "generative_criterias": [
+            "The MAC is the same as what we set in BFT station."
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Write and check EEPROM Data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>gpio 15 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rom_sn set WB2223DA001102</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>gpio 15 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>rom_sn show</color></highlight></column><column><color value = None><highlight value = None>Write and check EEPROM Data(Please make sure the test fixture SAQF-D1 FW has upgraded rom_sn file) 1. Send command gpio 15 1 to disable write protection of EEPROM. 2. Send command rom_sn set WBYYWWDBSN to write manufacture information in EEPROMWB \u2013 Two-Char ID for WNC S2 Factory production line manufactureYY \u2013 Two digits, it means year of Manufacture ex: 2020 years, it should be keyed in 20.WW - Two digits, it means work week of Manufacture ex: 8/31 is 36rd work week, it should be keyed in 36.DB - Two-char product ID and fixed for Binary v2 as \"DB\"SN \u2013 Six digits, it means the Manufacture number of product.For example:92nd unit manufactured in the 43rd work week in 2020, it should key in rom_sn set WB2043DB0000923. Send command gpio 15 0 to enable write protection of EEPROM. 4. Send command rom_sn show to check the manufacture information we write in EEPROMFor example: 92nd unit manufactured in the 43rd work week in 2020, dumped result should be \u201c</highlight><highlight value = 'red'>WB2043DB000092</highlight><highlight value = None>\u201d, the checksum of WB2043DB000092 should be </highlight><highlight value = 'red'>82</highlight><highlight value = None>CHECKSUM \u2013 Two digits, the checksum is the 2\u2019s complement of the 8-bit sum of all bytes except the checksum byte. (Factory need to calculate the checksum after scanned the barcode while starting functional test).</highlight></color></column></row></table>",
+        "generative_commands": [
+            "gpio 15 1",
+            "rom_sn set WB2223DA001102",
+            "gpio 15 0",
+            "rom_sn show"
+        ],
+        "generative_criterias": [
+            "WB2043DB000092",
+            "82"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Write and check EEPROM Data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>10</color></highlight></column><column><color value = None><highlight value = None>=========================================================================Enter the option to test: 10=== PWM LED Test Start ====== PWM Blue led test ====== PWM Green led test ====== PWM RED led test ====== PWM WiFi led test ===</highlight><highlight value = 'green'>=== PWM LED Test End ===</highlight><highlight value = None>=========================================================================</highlight></color></column></row></table>",
+        "generative_commands": [
+            "10"
+        ],
+        "generative_criterias": [
+            "=== PWM LED Test End ==="
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Write and check EEPROM Data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Press \u201cESC\u201d to stop to boot mode when message - \u201cHit any key to stop autoboot:\u201d appears and \u201cCM66#\u201d prompt will be displayed. Check information by each of them.</color></highlight></column><column><color value = None><highlight value = None>U-Boot 2016.01 - </highlight><highlight value = 'cyan'>R6AQ-C4 V1.0.0.10</highlight><highlight value = None> (May 22 2023 - 12:27:17 +0800) </highlight></color><color value = None><highlight value = None><color value = '#FF6600;'> </color><color value = None>environment</color></highlight><highlight value = 'cyan'>PCI Link Intialized</highlight><highlight value = None> </highlight></color><highlight value = None><color value = None>\n</highlight></color><color value = None><highlight value = 'cyan'>PCI Link Intialized</highlight><highlight value = None> </highlight></color><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>In:    serial@78B3000Out:   serial@78B3000Err:   serial@78B3000machid: 801000eMMC Device 0 not foundeth0 MAC Address from ART is not valideth1 MAC Address from ART is not valideth2 MAC Address from ART is not valideth3 MAC Address from ART is not valideth4 MAC Address from ART is not valideth5 MAC Address from ART is not validHit any key to stop autoboot:  0Net:   MAC0 addr:0:3:7f:ba:db:adPHY ID: 0x31c31c231</color><color value = '#FF6600;'> </color><color value = None>NAND read: device 0 offset 0x1280000, size 0x100000 1048576 bytes read: OKCRC check good on phy fw file (0x3B1A)PHYFW:Loading IRAM...........done.PHYFW:Loading DRAM..............done.phy fw image load good CRC-16 matches (0xE2C3)EDMA ver 1 hw initNum rings - TxDesc:1 (0-0) TxCmpl:1 (7-7)RxDesc:1 (15-15) RxFill:1 (7-7)ipq807x_edma_alloc_rings: successfullipq807x_edma_setup_ring_resources: successfullipq807x_edma_configure_rings: successfullipq807x_edma_hw_init: successfulleth0CM66#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "Press \u201cESC\u201d to stop to boot mode when message - \u201cHit any key to stop autoboot:\u201d appears and \u201cCM66#\u201d prompt will be displayed. Check information by each of them."
+        ],
+        "generative_criterias": [
+            "R6AQ-C4 V1.0.0.10",
+            "PCI Link Intialized",
+            "PCI Link Intialized"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Write and check EEPROM Data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>cat /proc/sys/kernel/version</color></highlight></column><column><color value = None><highlight value = None>mD67415BC4B0E:/# cat /proc/sys/kernel/version</highlight><highlight value = 'green'>#1 SMP Fri Jul 8 14:52:10 PDT 2022</highlight></color></column></row></table>",
+        "generative_commands": [
+            "cat /proc/sys/kernel/version"
+        ],
+        "generative_criterias": [
+            "#1 SMP Fri Jul 8 14:52:10 PDT 2022"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Write and check EEPROM Data",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>tecro 0 1 5 1</color></highlight></column><column><color value = '#000000;'><highlight value = None>root@R7AQ-C1:/# tecro 0 1 5 1=> 0. Diagnostic Test=> 1. I2C Test=> 4. </highlight><highlight value = 'yellow'>0x41 LTC9105 POWER_MONITOR Test</highlight><highlight value = None>=> 1. Display voltage/current/power</highlight><highlight value = 'yellow'>53.560V</highlight><highlight value = None>0.324A</highlight><highlight value = 'yellow'>17.353W</highlight><highlight value = None>root@R7AQ-C1:/#</highlight></color></column></row></table>",
+        "generative_commands": [
+            "tecro 0 1 5 1"
+        ],
+        "generative_criterias": [
+            "0x41 LTC9105 POWER_MONITOR Test",
+            "53.560V",
+            "17.353W"
+        ]
+    }
+]

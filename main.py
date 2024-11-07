@@ -1,7 +1,7 @@
 import json, shutil
 from bs4 import BeautifulSoup
 
-# from abstract import file_abstract, convert_to_dataset, convert_to_LLM_dataset
+from abstract import file_abstract, convert_to_dataset, convert_to_LLM_dataset
 # from generate import generate
 from create_document import create_document
 from create_table import create_table
@@ -38,6 +38,8 @@ def get_conbined_datas(llm_dataset_path, generative_datas_path):
     datas = []
 
     for i in range(count):
+        print(f"llme: {len(llm_dataset)}")
+        print(f"generative: {len(generative_datas)}")
         generative_data = generative_datas[i]
         generative_commands, generative_criterias = get_generative_data(
             instruction=llm_dataset[i]['instruction'],
@@ -68,7 +70,7 @@ def main():
     # file_abstract(file_path)
     # convert_to_dataset(folder_path)
     # convert_to_LLM_dataset(folder_path, folder_path)
-    # shutil.move(file_path, folder_path)
+    shutil.move(file_path, folder_path)
     
     llm_dataset_path = f"{file_path}/llm_datasets.json"
     generative_datas_path = output_path

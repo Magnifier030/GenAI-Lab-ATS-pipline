@@ -39,6 +39,28 @@ def set_function(function:str, test_item:str, test_command:list, pass_criteria:l
         print(function_text)
         return function_text
     
+    def CommandCheck_MutiByOne(function:str, test_item:str, commands:list, criterias:list):
+        functions = []
+        index = 0 
+        criteria = criterias[0]
+        criteria = criteria.replace("\"", "\\\"")
+
+        for command in commands:
+            index+=1
+
+            command = command.replace("\"", "\\\"")
+            
+            function_text = function.replace("[test_item]", test_item)
+            function_text = function_text.replace("[test_command]", command)
+            function_text = function_text.replace("[pass_criteria]",  criteria if index == len(commands)  else "[請人員填寫 Criteria]")
+            function_text = f"testResult = {function_text}" if index == 0 else f"testResult = testResult && {function_text}"
+            
+            functions.append(function_text)
+
+        function = "".join(functions)
+        print(function)
+        return function
+    
     def SelectFunction(commands:list, criterias:list):
         num_of_commands = len(commands)
         num_of_criterias = len(criterias)
@@ -49,12 +71,16 @@ def set_function(function:str, test_item:str, test_command:list, pass_criteria:l
         elif num_of_commands == 1:
             return "CommandCheck_OneByMuti"
         
+        elif num_of_commands > 1 and num_of_criterias == 1:
+            return "CommandCheck_MutiByOne"
+        
         else:
             return "CommandCheck_OneByOne"
 
     functions = {
         "CommandCheck_OneByOne" : CommandCheck_OneByOne,
-        "CommandCheck_OneByMuti" : CommandCheck_OneByMuti
+        "CommandCheck_OneByMuti" : CommandCheck_OneByMuti,
+        "CommandCheck_MutiByOne" : CommandCheck_MutiByOne
     }
     
     function_type = SelectFunction(test_command, pass_criteria)

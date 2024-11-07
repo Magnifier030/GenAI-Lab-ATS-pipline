@@ -61,7 +61,9 @@ def extract_text(element):
                     
         elif node.tag == '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r':
             text_parts = []
+            delete_line = None
             for subnode in node:
+                print([sub for sub in subnode])
                 if subnode.tag == '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr':
                     color = subnode.find('.//w:color', namespaces)
                     if color is not None:
@@ -69,11 +71,16 @@ def extract_text(element):
                     highlight = subnode.find('.//w:highlight', namespaces)
                     if highlight is not None:
                         highlight_val = highlight.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val')
-                if subnode.tag == '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t':
+                    
+                    delete_line = subnode.find('.//w:strike', namespaces)
+                if subnode.tag == '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t' and delete_line is None:
+                    print("text")
                     text_parts.append(subnode.text)
             
             text = ''.join(text_parts)
+            print(F"text:{text}")
             if text == '':
+                print("略過")
                 continue
             color_texts.append(
                 {
