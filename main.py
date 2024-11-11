@@ -82,23 +82,23 @@ def main():
     #     dataset_path=llm_dataset_path
     # )
 
-    datas = get_conbined_datas(
-        llm_dataset_path=llm_dataset_path,
-        generative_datas_path=generative_datas_path
-    )
+    # datas = get_conbined_datas(
+    #     llm_dataset_path=llm_dataset_path,
+    #     generative_datas_path=generative_datas_path
+    # )
     
-    docx_path = f"{file_path}/compared.docx"
-    json_path = f"{file_path}/generative_test_table.json"
+    # docx_path = f"{file_path}/compared.docx"
+    # json_path = f"{file_path}/generative_test_table.json"
 
-    create_table(
-        datas=datas,
-        output_file_path=json_path
-    )
+    # create_table(
+    #     datas=datas,
+    #     output_file_path=json_path
+    # )
 
-    create_document(
-        datas=datas,
-        output_file_path=docx_path
-    )
+    # create_document(
+    #     datas=datas,
+    #     output_file_path=docx_path
+    # )
 
     create_program(
         file_name=file_name

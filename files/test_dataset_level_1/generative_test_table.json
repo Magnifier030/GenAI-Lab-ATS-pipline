@@ -44,13 +44,9 @@
             "hexdump /dev/caldata"
         ],
         "generative_criterias": [
-            "*",
-            "*",
             "0000000 0000 0000 0000 0000 0000 0000 0000 0000",
-            "0200000",
             "*",
-            "0200000",
-            "*"
+            "0200000"
         ]
     },
     {
@@ -61,7 +57,8 @@
             "atom ACT2 SignData --InFile \" + $\"{MAC}_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml > \" + $\"{MAC}_zealand_signdata_output.xml"
         ],
         "generative_criterias": [
-            "256"
+            "256",
+            "aea18d135ecd1ecf0d606b44fa65e92cd1bc121118b39e72165a8ab1cb2cdd89731c50a25acb622e42ad4c7979b1245dfe30c9378237e0704290d0d5f2e829d4356588f0b3f311372a2edd077af9d2919419e35ae794914a3aa388f15d4bcb9a094c238cd7a58e5737d7b108ceba3bef6d5b9429d8c2cdc038d8fcf74d50b63ce1dd96043829b16e14f476478af5433d5d7f8dbff7430689e569c11a8feb871baee93fb579535aec3af15afaa4ade3ad41aa632eb1a8d442730c62272e847bd05de8638aec87c4031490f11cbdf793bd980a95d657461336fdfdbd46f6db752d2492c70be9fad3d6f722e7a386569a5ef36376bad750dfc4c87c765021fdec3b"
         ]
     },
     {
@@ -193,8 +190,7 @@
             "MR_CCT.exe -r \u201cSN\u201d"
         ],
         "generative_criterias": [
-            "[SUCCESS] DUT is not in the CCT Network",
-            "MR_CCT.exe -r Q5AF-GRFA-ZPDZ"
+            "[SUCCESS] DUT is not in the CCT Network"
         ]
     },
     {
@@ -239,24 +235,9 @@
             "cd /tmp",
             "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100",
             "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr",
-            "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin",
-            "cd /tmp",
-            "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100",
-            "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr",
-            "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin",
-            "cd /tmp",
-            "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100",
-            "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr",
             "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin"
         ],
         "generative_criterias": [
-            "53577a59d53742a4321d852aad2c0c83",
-            "53577a59d53742a4321d852aad2c0c83",
-            "53577a59d53742a4321d852aad2c0c83",
-            "53577a59d53742a4321d852aad2c0c83",
-            "53577a59d53742a4321d852aad2c0c83",
-            "53577a59d53742a4321d852aad2c0c83",
-            "53577a59d53742a4321d852aad2c0c83",
             "53577a59d53742a4321d852aad2c0c83"
         ]
     },
@@ -313,11 +294,6 @@
             "memtester 1 1"
         ],
         "generative_criterias": [
-            "ok",
-            "ok",
-            "ok",
-            "ok",
-            "ok",
             "ok",
             "ok",
             "ok",
@@ -677,7 +653,8 @@
             "dmesg | grep \"usb registration success\""
         ],
         "generative_criterias": [
-            "btmtk_usb_init: usb registration success."
+            "AT+QUIMSLOT=2",
+            "46-digit"
         ]
     },
     {
