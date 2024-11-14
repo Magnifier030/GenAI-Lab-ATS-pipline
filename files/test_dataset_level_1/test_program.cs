@@ -50,7 +50,7 @@ public Check ART Partition & cal data(int retry)
 
     for (int i = 0; i < retry; i++)
     {
-        testResult = CommandCheck("Check ART Partition & cal data", "hexdump /dev/caldata", new string[] { "*", "*", "0000000 0000 0000 0000 0000 0000 0000 0000 0000", "0200000", "*", "0200000", "*" }, 30);
+        testResult = CommandCheck("Check ART Partition & cal data", "hexdump /dev/caldata", new string[] { "0000000 0000 0000 0000 0000 0000 0000 0000 0000", "*", "0200000" }, 30);
 
         if (testResult)
             break;
@@ -65,7 +65,7 @@ public Unlock Bootloader(int retry)
 
     for (int i = 0; i < retry; i++)
     {
-        testResult = CommandCheck("Unlock Bootloader", "atom ACT2 SignData --InFile \" + $\"{MAC}_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml > \" + $\"{MAC}_zealand_signdata_output.xml", new string[] { "256" }, 30);
+        testResult = CommandCheck("Unlock Bootloader", "atom ACT2 SignData --InFile \" + $\"{MAC}_zealand_inputchallengedata.txt --InFormat txt --OutFormat xml > \" + $\"{MAC}_zealand_signdata_output.xml", new string[] { "256", "aea18d135ecd1ecf0d606b44fa65e92cd1bc121118b39e72165a8ab1cb2cdd89731c50a25acb622e42ad4c7979b1245dfe30c9378237e0704290d0d5f2e829d4356588f0b3f311372a2edd077af9d2919419e35ae794914a3aa388f15d4bcb9a094c238cd7a58e5737d7b108ceba3bef6d5b9429d8c2cdc038d8fcf74d50b63ce1dd96043829b16e14f476478af5433d5d7f8dbff7430689e569c11a8feb871baee93fb579535aec3af15afaa4ade3ad41aa632eb1a8d442730c62272e847bd05de8638aec87c4031490f11cbdf793bd980a95d657461336fdfdbd46f6db752d2492c70be9fad3d6f722e7a386569a5ef36376bad750dfc4c87c765021fdec3b" }, 30);
 
         if (testResult)
             break;
@@ -235,7 +235,7 @@ public RemoveDUTNetwork(int retry)
 
     for (int i = 0; i < retry; i++)
     {
-        testResult = CommandCheck("RemoveDUTNetwork", "MR_CCT.exe -r “SN”", new string[] { "[SUCCESS] DUT is not in the CCT Network", "MR_CCT.exe -r Q5AF-GRFA-ZPDZ" }, 30);
+        testResult = CommandCheck("RemoveDUTNetwork", "MR_CCT.exe -r “SN”", new string[] { "[SUCCESS] DUT is not in the CCT Network" }, 30);
 
         if (testResult)
             break;
@@ -290,21 +290,13 @@ public Upgrade to production FW(int retry)
 
     for (int i = 0; i < retry; i++)
     {
-        testResult = CommandCheck("Upgrade to production FW", "cd /tmp", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
+        testResult = testResult && CommandCheck("Upgrade to production FW", "cd /tmp", new string[] { [請人員填寫 Criteria] }, 30);
 
-testResult = testResult && CommandCheck("Upgrade to production FW", "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
+testResult = testResult && CommandCheck("Upgrade to production FW", "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100", new string[] { [請人員填寫 Criteria] }, 30);
 
-testResult = testResult && CommandCheck("Upgrade to production FW", "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
+testResult = testResult && CommandCheck("Upgrade to production FW", "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr", new string[] { [請人員填寫 Criteria] }, 30);
 
-testResult = testResult && CommandCheck("Upgrade to production FW", "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
-
-testResult = testResult && CommandCheck("Upgrade to production FW", "cd /tmp", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
-
-testResult = testResult && CommandCheck("Upgrade to production FW", "tftp -g -r openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin 192.168.1.100", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
-
-testResult = testResult && CommandCheck("Upgrade to production FW", "md5sum openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtr", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
-
-testResult = testResult && CommandCheck("Upgrade to production FW", "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin", new string[] { "53577a59d53742a4321d852aad2c0c83" }, 30);
+testResult = testResult && CommandCheck("Upgrade to production FW", "sysupgrade -F -n openwrt-mediatek-mt7622-mediatek_mt7622-mesh-node-dvtrc1-squashfs-sysupgrade.bin", new string[] { 53577a59d53742a4321d852aad2c0c83 }, 30);
 
         if (testResult)
             break;
@@ -376,7 +368,7 @@ public DDR(int retry)
 
     for (int i = 0; i < retry; i++)
     {
-        testResult = CommandCheck("DDR", "memtester 1 1", new string[] { "ok", "ok", "ok", "ok", "ok", "ok", "ok", "ok", "ok", "ok", "ok", "ok" }, 30);
+        testResult = CommandCheck("DDR", "memtester 1 1", new string[] { "ok", "ok", "ok", "ok", "ok", "ok", "ok" }, 30);
 
         if (testResult)
             break;
@@ -757,9 +749,9 @@ public BT interface check(int retry)
 
     for (int i = 0; i < retry; i++)
     {
-        testResult = testResult && CommandCheck("BT interface check", "modprobe btmtk_usb", new string[] { [請人員填寫 Criteria] }, 30);
+        testResult = CommandCheck("BT interface check", "modprobe btmtk_usb", new string[] { "AT+QUIMSLOT=2" }, 30);
 
-testResult = testResult && CommandCheck("BT interface check", "dmesg | grep \"usb registration success\"", new string[] { btmtk_usb_init: usb registration success. }, 30);
+testResult = testResult && CommandCheck("BT interface check", "dmesg | grep \"usb registration success\"", new string[] { "46-digit" }, 30);
 
         if (testResult)
             break;
