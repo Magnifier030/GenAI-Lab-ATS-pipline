@@ -1,0 +1,921 @@
+[
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\"</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\"</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\""
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "CheckPsuStatus",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#4F81BD;'>tftp -r fuse_blower_wnc_pvt.sh -g 192.168.10.1</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>/tmp#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>tftp -r fuse_blower_wnc_pvt.sh -g 192.168.10.1</command>\n<criteria>/tmp#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "tftp -r fuse_blower_wnc_pvt.sh -g 192.168.10.1"
+            ],
+            "criterias": [
+                "/tmp#"
+            ]
+        },
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "EnableSecureBoot",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>cat /tmp/DeviceId</color><color value = '#FF0000;'> </color></highlight></column><column><highlight value = None><color value = None>Router-010000000000000000CF3519</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>cat /tmp/DeviceId</command>\n<criteria>Router-010000000000000000CF3519</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "cat /tmp/DeviceId"
+            ],
+            "criterias": [
+                "Router-010000000000000000CF3519"
+            ]
+        },
+        "test_station": "Test Items Command-BFT/Radio Verification station",
+        "test_item": "Read STSAFE ID",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>clear counters</color></highlight></column><column><highlight value = None><color value = None>localhost(config)#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>clear counters</command>\n<criteria>localhost(config)#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "clear counters"
+            ],
+            "criterias": [
+                "localhost(config)#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "packet_path_counter_clear",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>prefdl -e prefdl_data > prefdl_data_encode</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>prefdl -e prefdl_data > prefdl_data_encode</command>\n<criteria>#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "prefdl -e prefdl_data > prefdl_data_encode"
+            ],
+            "criterias": [
+                "#"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "EncodePrefdl",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag sys version aboot=\"SB_IDVH .001.001.000.001.000.00017.R-0000000000000000\"</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag sys version aboot=\"SB_IDVH .001.001.000.001.000.00017.R-0000000000000000\"</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag sys version aboot=\"SB_IDVH .001.001.000.001.000.00017.R-0000000000000000\""
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "CheckAboorVersion",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo $?</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>echo $?</command>\n<criteria>2</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "echo $?"
+            ],
+            "criterias": [
+                "2"
+            ]
+        },
+        "test_station": "Test Items Command-BB station",
+        "test_item": "CheckSPI_Unwritable",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>y</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Press <Ctrl+B> for the Boot Menu</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>y</command>\n<criteria>Press  for the Boot Menu</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "y"
+            ],
+            "criterias": [
+                "Press <Ctrl+B> for the Boot Menu"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "ClearWNC",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>erase startup-config</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Deleting...</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Successful operation</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>awplus#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>erase startup-config</command>\n<criteria>Deleting...</criteria>\n<criteria>Successful operation</criteria>\n<criteria>awplus#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "erase startup-config"
+            ],
+            "criterias": [
+                "Deleting...",
+                "Successful operation",
+                "awplus#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Traffic_Test",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>net_man at_cmd AT+CGSN=1</color></highlight></column><column><highlight value = None><color value = None>OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>//Record IMEI number//</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>net_man at_cmd AT+CGSN=1</command>\n<criteria>OK</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "net_man at_cmd AT+CGSN=1"
+            ],
+            "criterias": [
+                "OK"
+            ]
+        },
+        "test_station": "Test Items Command-PCBA station",
+        "test_item": "CheckLTEIMEI",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled_2 set=2</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag mgmt led sysled_2 set=2</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag mgmt led sysled_2 set=2"
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "SetSysled2SolidGreen",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag fan speed test=4886,9072</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag fan speed test=4886,9072</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag fan speed test=4886,9072"
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "VerifyFan50",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>post_assy > /dev/null 2>&1 &</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>post_assy > /dev/null 2>&1 &</command>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "post_assy > /dev/null 2>&1 &"
+            ],
+            "criterias": [
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "run_cmdd_test",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo \"SerialNumber: WTW21481002\" >> prefdl_data</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>echo \"SerialNumber: WTW21481002\" >> prefdl_data</command>\n<criteria>#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "echo \"SerialNumber: WTW21481002\" >> prefdl_data"
+            ],
+            "criterias": [
+                "#"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "WriteSnToPrefdl",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>devmem 0xF4122C40 16 0xF2D3</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>devmem 0xF4122C40 16 0xF2D3</command>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "devmem 0xF4122C40 16 0xF2D3"
+            ],
+            "criterias": [
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Update_CPU_RX_EQ",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>sync</color></highlight></column><column><highlight value = None><color value = None>bash-4.2#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>sync</command>\n<criteria>bash-4.2#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "sync"
+            ],
+            "criterias": [
+                "bash-4.2#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "SyncData",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag storage emmc info test=\"008GB1\"</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag storage emmc info test=\"008GB1\"</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag storage emmc info test=\"008GB1\""
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "CheckEMMCInfo",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>/mnt/flash/mmc_static cache disable /dev/mmcblk0 2>/dev/null</color></highlight></column><column><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>/mnt/flash/mmc_static cache disable /dev/mmcblk0 2>/dev/null</command>\n<criteria>Aboot#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "/mnt/flash/mmc_static cache disable /dev/mmcblk0 2>/dev/null"
+            ],
+            "criterias": [
+                "Aboot#"
+            ]
+        },
+        "test_station": "Test Items Command-BB station",
+        "test_item": "Remove_autoBI_config",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag mgmt usb ether test num_usb3_0=2 criteria_3_0=900 duration=10 side_check=1</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag mgmt usb ether test num_usb3_0=2 criteria_3_0=900 duration=10 side_check=1</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag mgmt usb ether test num_usb3_0=2 criteria_3_0=900 duration=10 side_check=1"
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "TestFirstUSBEthernet",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>switchport access vlan 300</color></highlight></column><column><highlight value = None><color value = None>localhost(config-if-Et24)#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>switchport access vlan 300</command>\n<criteria>localhost(config-if-Et24)#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "switchport access vlan 300"
+            ],
+            "criterias": [
+                "localhost(config-if-Et24)#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "packet_path_vlan_create",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>onewire id</color></highlight></column><column><highlight value = None><color value = None>0xc3a9</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>onewire id</command>\n<criteria>0xc3a9</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "onewire id"
+            ],
+            "criterias": [
+                "0xc3a9"
+            ]
+        },
+        "test_station": "Test Items Command-PCBA station",
+        "test_item": "OneWireTest",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>boot flash:$EOS_img</color></highlight></column><column><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>boot flash:$EOS_img</command>\n<criteria>Aboot#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "boot flash:$EOS_img"
+            ],
+            "criterias": [
+                "Aboot#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "Remove_autoBI_config",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>brctl addif br-lan eth0</color></highlight></column><column><highlight value = None><color value = None>root@OpenWrt:/#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>brctl addif br-lan eth0</command>\n<criteria>root@OpenWrt:/#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "brctl addif br-lan eth0"
+            ],
+            "criterias": [
+                "root@OpenWrt:/#"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "Ethernet test",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled_2 set=0</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag mgmt led sysled_2 set=0</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag mgmt led sysled_2 set=0"
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "FUNC1_Black_LED",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>Verify uboot. Version: 8.10.0</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>Verify uboot. Version: 8.10.0</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "Verify uboot. Version: 8.10.0"
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Interrupt_MAC",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>ip netns delete net1</color></highlight></column><column><highlight value = None><color value = None>bash-4.2#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>ip netns delete net1</command>\n<criteria>bash-4.2#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "ip netns delete net1"
+            ],
+            "criterias": [
+                "bash-4.2#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "usb_test",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag mgmt oob led=1,0</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag mgmt oob led=1,0</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag mgmt oob led=1,0"
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "SetMgmtRightOff",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>PSU_black_box_tool.sh dump all</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>PSU_black_box_tool.sh get all all</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>PSU_black_box_tool.sh dump all</command>\n<command>PSU_black_box_tool.sh get all all</command>\n<criteria>Result: PASS</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "PSU_black_box_tool.sh dump all",
+                "PSU_black_box_tool.sh get all all"
+            ],
+            "criterias": [
+                "Result: PASS"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "PrintPsuBlackBox",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo \"SWI=flash:EOS.swi\" > /mnt/flash/boot-config</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>echo \"SWI=flash:EOS.swi\" > /mnt/flash/boot-config</command>\n<criteria>#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "echo \"SWI=flash:EOS.swi\" > /mnt/flash/boot-config"
+            ],
+            "criterias": [
+                "#"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "SetBootConfig",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo 1 4 1 3 > /proc/sys/kernel/printk</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>echo 1 4 1 3 > /proc/sys/kernel/printk</command>\n<criteria>#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "echo 1 4 1 3 > /proc/sys/kernel/printk"
+            ],
+            "criterias": [
+                "#"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "SetPrintkLevel",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled_5 set=1</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag mgmt led sysled_5 set=1</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag mgmt led sysled_5 set=1"
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "USB_Amber_LED",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>show boot</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>flash:/default.cfg (file exists)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>awplus#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>show boot</command>\n<criteria>flash:/default.cfg (file exists)</criteria>\n<criteria>awplus#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "show boot"
+            ],
+            "criterias": [
+                "flash:/default.cfg (file exists)",
+                "awplus#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Traffic_Set",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>ip link set macv1 netns net1</color></highlight></column><column><highlight value = None><color value = None>bash-4.2#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>ip link set macv1 netns net1</command>\n<criteria>bash-4.2#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "ip link set macv1 netns net1"
+            ],
+            "criterias": [
+                "bash-4.2#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "usb_test",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>bash sudo flashrom</color></highlight></column><column><highlight value = None><color value = None>localhost(config)#,Macronix flash chip &quot;MX25U12835F&quot;</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>bash sudo flashrom</command>\n<criteria>localhost(config)#,Macronix flash chip \"MX25U12835F\"</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "bash sudo flashrom"
+            ],
+            "criterias": [
+                "localhost(config)#,Macronix flash chip &quot;MX25U12835F&quot;"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "sysPwrOn_check_flashrom",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>imgaddr=0x44000000 && source $imgaddr:script</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>reset</color></highlight></column><column><highlight value = None><color value = None>IPQ6018#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>imgaddr=0x44000000 && source $imgaddr:script</command>\n<command>reset</command>\n<criteria>IPQ6018#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "imgaddr=0x44000000 && source $imgaddr:script",
+                "reset"
+            ],
+            "criterias": [
+                "IPQ6018#"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "Write CP FW to EMMC",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 15:02.0 | grep LnkCap</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 15:04.0 | grep LnkCap</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 90:02.0 | grep LnkCap</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 90:04.0 | grep LnkCap</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Width x8</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>bash sudo lspci -vvv -s 15:02.0 | grep LnkCap</command>\n<command>bash sudo lspci -vvv -s 15:04.0 | grep LnkCap</command>\n<command>bash sudo lspci -vvv -s 90:02.0 | grep LnkCap</command>\n<command>bash sudo lspci -vvv -s 90:04.0 | grep LnkCap</command>\n<criteria>Width x8</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "bash sudo lspci -vvv -s 15:02.0 | grep LnkCap",
+                "bash sudo lspci -vvv -s 15:04.0 | grep LnkCap",
+                "bash sudo lspci -vvv -s 90:02.0 | grep LnkCap",
+                "bash sudo lspci -vvv -s 90:04.0 | grep LnkCap"
+            ],
+            "criterias": [
+                "Width x8"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "ShowNimSsdInformation",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>configure terminal</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>awplus(config)#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>configure terminal</command>\n<criteria>awplus(config)#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "configure terminal"
+            ],
+            "criterias": [
+                "awplus(config)#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Login_Cus",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag fan pwm duty_cycle=100</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag fan pwm duty_cycle=100</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag fan pwm duty_cycle=100"
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Fan_Speed_Set_100",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>wifi scan</color></highlight></column><column><highlight value = None><color value = None>ESP_</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>wifi scan</command>\n<criteria>ESP_</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "wifi scan"
+            ],
+            "criterias": [
+                "ESP_"
+            ]
+        },
+        "test_station": "Test Items Command-OTA&Final station",
+        "test_item": "WiFiSSID",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>config</color></highlight></column><column><highlight value = None><color value = None>localhost(config)#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>config</command>\n<criteria>localhost(config)#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "config"
+            ],
+            "criterias": [
+                "localhost(config)#"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "sysPwrOn_config",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>rm -rf burnInlog_Z2W1O2800006N01.tar</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>root@localhost:~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>rm -rf burnInlog_Z2W1O2800006N01.tar</command>\n<criteria>root@localhost:~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "rm -rf burnInlog_Z2W1O2800006N01.tar"
+            ],
+            "criterias": [
+                "root@localhost:~#"
+            ]
+        },
+        "test_station": "Test Items Command Final (WNC) station",
+        "test_item": "UpLoadBILog",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>boot flash:$diagOS_img</color></highlight></column><column><highlight value = None><color value = None>localhost login:</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>boot flash:$diagOS_img</command>\n<criteria>localhost login:</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "boot flash:$diagOS_img"
+            ],
+            "criterias": [
+                "localhost login:"
+            ]
+        },
+        "test_station": "Test Items FQC station",
+        "test_item": "sysPwrOn_rm_boot_flash",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag sys memory size compare=2032608</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag sys memory size compare=2032608</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag sys memory size compare=2032608"
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "CheckMemorySize",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>echo 1 4 1 3 > /proc/sys/kernel/printk</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>echo 1 4 1 3 > /proc/sys/kernel/printk</command>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "echo 1 4 1 3 > /proc/sys/kernel/printk"
+            ],
+            "criterias": [
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Set_Printk_Level",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled set=4</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>diag mgmt led sysled set=4</command>\n<criteria>Result: PASS</criteria>\n<criteria>~#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "diag mgmt led sysled set=4"
+            ],
+            "criterias": [
+                "Result: PASS",
+                "~#"
+            ]
+        },
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "System_White_LED",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#4F81BD;'>mount /dev/mmcblk0p1 /diag</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>mount /dev/mmcblk0p1 /diag</command>\n<criteria>#</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "mount /dev/mmcblk0p1 /diag"
+            ],
+            "criterias": [
+                "#"
+            ]
+        },
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "ClearWNCData",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Upgrade counter: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Starting Firmware Upgrade</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Post-upgrade counter: 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Upgrade successful</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi</command>\n<criteria>Upgrade counter: 0</criteria>\n<criteria>Starting Firmware Upgrade</criteria>\n<criteria>Post-upgrade counter: 1</criteria>\n<criteria>Upgrade successful</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi"
+            ],
+            "criterias": [
+                "Upgrade counter: 0",
+                "Starting Firmware Upgrade",
+                "Post-upgrade counter: 1",
+                "Upgrade successful"
+            ]
+        },
+        "test_station": " ",
+        "test_item": "UpdateInactiveTPM",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>Y</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Restoring default settings... Complete</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>Y</command>\n<criteria>Restoring default settings... Complete</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "Y"
+            ],
+            "criterias": [
+                "Restoring default settings... Complete"
+            ]
+        },
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Switch_Cus_FW",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Server command: iperf -s</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Client command: uperf -c DHCP_Server_ip -w 1024k -p 12 -t 10 -I 1</color></highlight></column><column><highlight value = None><color value = None>Throughput Limitation > 750 Mbps</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>Server command: iperf -s</command>\n<command>Client command: uperf -c DHCP_Server_ip -w 1024k -p 12 -t 10 -I 1</command>\n<criteria>Throughput Limitation > 750 Mbps</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "Server command: iperf -s",
+                "Client command: uperf -c DHCP_Server_ip -w 1024k -p 12 -t 10 -I 1"
+            ],
+            "criterias": [
+                "Throughput Limitation > 750 Mbps"
+            ]
+        },
+        "test_station": "Test Items Command-BFT/Radio Verification station",
+        "test_item": "LAN to WAN Throughput Test",
+        "level": "0",
+        "test_plan_resource": ""
+    },
+    {
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>show management security</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>STM ST33TPHF2X TPM 2.0 (1.512)</color></highlight></column></row></table>",
+        "input": "",
+        "output": "Answer: \n<command>show management security</command>\n<criteria>STM ST33TPHF2X TPM 2.0 (1.512)</criteria><|end_of_text|>",
+        "history": [],
+        "target": {
+            "commands": [
+                "show management security"
+            ],
+            "criterias": [
+                "STM ST33TPHF2X TPM 2.0 (1.512)"
+            ]
+        },
+        "test_station": "Test Items Command-Final station",
+        "test_item": "ShowManagementSecurity",
+        "level": "0",
+        "test_plan_resource": ""
+    }
+]

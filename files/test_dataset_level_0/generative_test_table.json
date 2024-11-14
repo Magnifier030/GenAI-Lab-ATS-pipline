@@ -1,0 +1,565 @@
+[
+    {
+        "test_station": " ",
+        "test_item": "CheckPsuStatus",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\"</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag psu info test mfr_id=\"FSP GROUP\" mfr_model=\"FSP800-20FM\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "EnableSecureBoot",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#4F81BD;'>tftp -r fuse_blower_wnc_pvt.sh -g 192.168.10.1</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>/tmp#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "tftp -r fuse_blower_wnc_pvt.sh -g 192.168.10.1"
+        ],
+        "generative_criterias": [
+            "/tmp#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BFT/Radio Verification station",
+        "test_item": "Read STSAFE ID",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>cat /tmp/DeviceId</color><color value = '#FF0000;'> </color></highlight></column><column><highlight value = None><color value = None>Router-010000000000000000CF3519</color></highlight></column></row></table>",
+        "generative_commands": [
+            "cat /tmp/DeviceId"
+        ],
+        "generative_criterias": [
+            "Router-010000000000000000CF3519"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "packet_path_counter_clear",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>clear counters</color></highlight></column><column><highlight value = None><color value = None>localhost(config)#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "clear counters"
+        ],
+        "generative_criterias": [
+            "localhost(config)#"
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "EncodePrefdl",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>prefdl -e prefdl_data > prefdl_data_encode</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "prefdl -e prefdl_data > prefdl_data_encode"
+        ],
+        "generative_criterias": [
+            "#"
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "CheckAboorVersion",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag sys version aboot=\"SB_IDVH .001.001.000.001.000.00017.R-0000000000000000\"</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag sys version aboot=\"SB_IDVH .001.001.000.001.000.00017.R-0000000000000000\""
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "CheckSPI_Unwritable",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo $?</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>2</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "echo $?"
+        ],
+        "generative_criterias": [
+            "2"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "ClearWNC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>y</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Press <Ctrl+B> for the Boot Menu</color></highlight></column></row></table>",
+        "generative_commands": [
+            "y"
+        ],
+        "generative_criterias": [
+            "Press  for the Boot Menu"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Traffic_Test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>erase startup-config</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Deleting...</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Successful operation</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>awplus#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "erase startup-config"
+        ],
+        "generative_criterias": [
+            "Deleting...",
+            "Successful operation",
+            "awplus#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-PCBA station",
+        "test_item": "CheckLTEIMEI",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>net_man at_cmd AT+CGSN=1</color></highlight></column><column><highlight value = None><color value = None>OK</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>//Record IMEI number//</color></highlight></column></row></table>",
+        "generative_commands": [],
+        "generative_criterias": []
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "SetSysled2SolidGreen",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled_2 set=2</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag mgmt led sysled_2 set=2"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "VerifyFan50",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag fan speed test=4886,9072</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag fan speed test=4886,9072"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "run_cmdd_test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>post_assy > /dev/null 2>&1 &</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "post_assy > /dev/null 2>&1 &"
+        ],
+        "generative_criterias": [
+            "~#"
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "WriteSnToPrefdl",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo \"SerialNumber: WTW21481002\" >> prefdl_data</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "echo \"SerialNumber: WTW21481002\" >> prefdl_data"
+        ],
+        "generative_criterias": [
+            "#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Update_CPU_RX_EQ",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>devmem 0xF4122C40 16 0xF2D3</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "devmem 0xF4122C40 16 0xF2D3"
+        ],
+        "generative_criterias": [
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "SyncData",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>sync</color></highlight></column><column><highlight value = None><color value = None>bash-4.2#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "sync"
+        ],
+        "generative_criterias": [
+            "bash-4.2#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "CheckEMMCInfo",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag storage emmc info test=\"008GB1\"</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag storage emmc info test=\"008GB1\""
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BB station",
+        "test_item": "Remove_autoBI_config",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>/mnt/flash/mmc_static cache disable /dev/mmcblk0 2>/dev/null</color></highlight></column><column><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "/mnt/flash/mmc_static cache disable /dev/mmcblk0 2>/dev/null"
+        ],
+        "generative_criterias": [
+            "Aboot#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "TestFirstUSBEthernet",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag mgmt usb ether test num_usb3_0=2 criteria_3_0=900 duration=10 side_check=1</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag mgmt usb ether test num_usb3_0=2 criteria_3_0=900 duration=10 side_check=1"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "packet_path_vlan_create",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>switchport access vlan 300</color></highlight></column><column><highlight value = None><color value = None>localhost(config-if-Et24)#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "switchport access vlan 300"
+        ],
+        "generative_criterias": [
+            "localhost(config-if-Et24)#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-PCBA station",
+        "test_item": "OneWireTest",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>onewire id</color></highlight></column><column><highlight value = None><color value = None>0xc3a9</color></highlight></column></row></table>",
+        "generative_commands": [
+            "onewire id"
+        ],
+        "generative_criterias": [
+            "0xc3a9"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "Remove_autoBI_config",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>boot flash:$EOS_img</color></highlight></column><column><highlight value = None><color value = None>Aboot#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "boot flash:$EOS_img"
+        ],
+        "generative_criterias": [
+            "Aboot#"
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "Ethernet test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>brctl addif br-lan eth0</color></highlight></column><column><highlight value = None><color value = None>root@OpenWrt:/#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "brctl addif br-lan eth0"
+        ],
+        "generative_criterias": [
+            "root@OpenWrt:/#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "FUNC1_Black_LED",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled_2 set=0</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag mgmt led sysled_2 set=0"
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Interrupt_MAC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>Verify uboot. Version: 8.10.0</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "Verify uboot. Version: 8.10.0"
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "usb_test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>ip netns delete net1</color></highlight></column><column><highlight value = None><color value = None>bash-4.2#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "ip netns delete net1"
+        ],
+        "generative_criterias": [
+            "bash-4.2#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "SetMgmtRightOff",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>diag mgmt oob led=1,0</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag mgmt oob led=1,0"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "PrintPsuBlackBox",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>PSU_black_box_tool.sh dump all</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>PSU_black_box_tool.sh get all all</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight></column></row></table>",
+        "generative_commands": [
+            "PSU_black_box_tool.sh dump all",
+            "PSU_black_box_tool.sh get all all"
+        ],
+        "generative_criterias": [
+            "Result: PASS"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "SetBootConfig",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo \"SWI=flash:EOS.swi\" > /mnt/flash/boot-config</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "echo \"SWI=flash:EOS.swi\" > /mnt/flash/boot-config"
+        ],
+        "generative_criterias": [
+            "#"
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "SetPrintkLevel",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>echo 1 4 1 3 > /proc/sys/kernel/printk</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "echo 1 4 1 3 > /proc/sys/kernel/printk"
+        ],
+        "generative_criterias": [
+            "#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "USB_Amber_LED",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled_5 set=1</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag mgmt led sysled_5 set=1"
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Traffic_Set",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>show boot</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>flash:/default.cfg (file exists)</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>awplus#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "show boot"
+        ],
+        "generative_criterias": [
+            "flash:/default.cfg (file exists)",
+            "awplus#"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "usb_test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>ip link set macv1 netns net1</color></highlight></column><column><highlight value = None><color value = None>bash-4.2#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "ip link set macv1 netns net1"
+        ],
+        "generative_criterias": [
+            "bash-4.2#"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "sysPwrOn_check_flashrom",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>bash sudo flashrom</color></highlight></column><column><highlight value = None><color value = None>localhost(config)#,Macronix flash chip &quot;MX25U12835F&quot;</color></highlight></column></row></table>",
+        "generative_commands": [
+            "bash sudo flashrom"
+        ],
+        "generative_criterias": [
+            "localhost(config)#,Macronix flash chip \"MX25U12835F\""
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "Write CP FW to EMMC",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>imgaddr=0x44000000 && source $imgaddr:script</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>reset</color></highlight></column><column><highlight value = None><color value = None>IPQ6018#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "reset"
+        ],
+        "generative_criterias": [
+            "IPQ6018#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "ShowNimSsdInformation",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 15:02.0 | grep LnkCap</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 15:04.0 | grep LnkCap</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 90:02.0 | grep LnkCap</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>bash sudo lspci -vvv -s 90:04.0 | grep LnkCap</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Width x8</color></highlight></column></row></table>",
+        "generative_commands": [
+            "bash sudo lspci -vvv -s 15:02.0 | grep LnkCap",
+            "bash sudo lspci -vvv -s 15:04.0 | grep LnkCap",
+            "bash sudo lspci -vvv -s 90:02.0 | grep LnkCap",
+            "bash sudo lspci -vvv -s 90:04.0 | grep LnkCap"
+        ],
+        "generative_criterias": [
+            "Width x8"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Login_Cus",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>configure terminal</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>awplus(config)#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "configure terminal"
+        ],
+        "generative_criterias": [
+            "awplus(config)#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Fan_Speed_Set_100",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag fan pwm duty_cycle=100</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag fan pwm duty_cycle=100"
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-OTA&Final station",
+        "test_item": "WiFiSSID",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>wifi scan</color></highlight></column><column><highlight value = None><color value = None>ESP_</color></highlight></column></row></table>",
+        "generative_commands": [
+            "wifi scan"
+        ],
+        "generative_criterias": [
+            "ESP_"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "sysPwrOn_config",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>config</color></highlight></column><column><highlight value = None><color value = None>localhost(config)#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "config"
+        ],
+        "generative_criterias": [
+            "localhost(config)#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Final (WNC) station",
+        "test_item": "UpLoadBILog",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>rm -rf burnInlog_Z2W1O2800006N01.tar</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>root@localhost:~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "rm -rf burnInlog_Z2W1O2800006N01.tar"
+        ],
+        "generative_criterias": [
+            "root@localhost:~#"
+        ]
+    },
+    {
+        "test_station": "Test Items FQC station",
+        "test_item": "sysPwrOn_rm_boot_flash",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>boot flash:$diagOS_img</color></highlight></column><column><highlight value = None><color value = None>localhost login:</color></highlight></column></row></table>",
+        "generative_commands": [
+            "boot flash:$diagOS_img"
+        ],
+        "generative_criterias": [
+            "localhost login:"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "CheckMemorySize",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag sys memory size compare=2032608</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag sys memory size compare=2032608"
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Set_Printk_Level",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (115200) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>echo 1 4 1 3 > /proc/sys/kernel/printk</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "echo 1 4 1 3 > /proc/sys/kernel/printk"
+        ],
+        "generative_criterias": [
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "System_White_LED",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>diag mgmt led sysled set=4</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Result: PASS</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>~#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "diag mgmt led sysled set=4"
+        ],
+        "generative_criterias": [
+            "Result: PASS",
+            "~#"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Final Functional Test (WNC diags) station",
+        "test_item": "ClearWNCData",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Telnet DUT command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#4F81BD;'>mount /dev/mmcblk0p1 /diag</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>#</color></highlight></column></row></table>",
+        "generative_commands": [
+            "mount /dev/mmcblk0p1 /diag"
+        ],
+        "generative_criterias": [
+            "#"
+        ]
+    },
+    {
+        "test_station": " ",
+        "test_item": "UpdateInactiveTPM",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Upgrade counter: 0</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Starting Firmware Upgrade</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Post-upgrade counter: 1</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#FF0000;'>Upgrade successful</color></highlight></column></row></table>",
+        "generative_commands": [
+            "tpm2util stm fu /mnt/flash/ST33TPHF2XSPI_00010200.fi"
+        ],
+        "generative_criterias": [
+            "Upgrade counter: 0",
+            "Starting Firmware Upgrade",
+            "Post-upgrade counter: 1",
+            "Upgrade successful"
+        ]
+    },
+    {
+        "test_station": "Test Items Command Post Assembly station",
+        "test_item": "Switch_Cus_FW",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#000000;'>Console DUT (9600) command:</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = '#0070C0;'>Y</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>Restoring default settings... Complete</color></highlight></column></row></table>",
+        "generative_commands": [
+            "Y"
+        ],
+        "generative_criterias": [
+            "Restoring default settings... Complete"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-BFT/Radio Verification station",
+        "test_item": "LAN to WAN Throughput Test",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = None>Server command: iperf -s</color></highlight><highlight value = None><color value = None>\n</highlight></color><highlight value = None><color value = None>Client command: uperf -c DHCP_Server_ip -w 1024k -p 12 -t 10 -I 1</color></highlight></column><column><highlight value = None><color value = None>Throughput Limitation > 750 Mbps</color></highlight></column></row></table>",
+        "generative_commands": [
+            "Client command: uperf -c DHCP_Server_ip -w 1024k -p 12 -t 10 -I 1"
+        ],
+        "generative_criterias": [
+            "Throughput Limitation > 750 Mbps"
+        ]
+    },
+    {
+        "test_station": "Test Items Command-Final station",
+        "test_item": "ShowManagementSecurity",
+        "instruction": "<table><heading-row><column><highlight value = None><color value = None>Command</color></highlight></column><column><highlight value = None><color value = None>Criteria</color></highlight></column></heading-row><row><column><highlight value = None><color value = '#0070C0;'>show management security</color></highlight></column><column><highlight value = None><color value = '#FF0000;'>STM ST33TPHF2X TPM 2.0 (1.512)</color></highlight></column></row></table>",
+        "generative_commands": [
+            "show management security"
+        ],
+        "generative_criterias": [
+            "STM ST33TPHF2X TPM 2.0 (1.512)"
+        ]
+    }
+]
